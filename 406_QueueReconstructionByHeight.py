@@ -1,4 +1,4 @@
-https://leetcode.com/problems/queue-reconstruction-by-height/
+#https://leetcode.com/problems/queue-reconstruction-by-height/
 class Solution:
     def reconstructQueue(self, people: List[List[int]]) -> List[List[int]]:
         """ Each person in a queue is idenitified by label [h,k] 

@@ -1,0 +1,27 @@
+#https://leetcode.com/problems/sort-colors/
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        """
+        Given a list of numbers from {0,1,2}, sort them in ascending order
+        Do not return anything, modify nums in-place instead.
+        """
+        freq = [0,0,0]
+        for i in nums:
+            freq[i] +=1
+            
+        j = 0
+        for label, i in enumerate(freq):
+            count = 0
+            while(count < i):
+                nums[j] = label
+                j += 1
+                count += 1
+                
+        
+# Complexity analysis 
+#n = length of nums
+# Time complexity O(n)
+# Two passes of nums
+
+
+
