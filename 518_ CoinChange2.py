@@ -31,6 +31,11 @@ class Solution:
         return f(0,amount)
 
 #Complexity analysis
+#0 <= start_index <= len(coins)
+#0 <= left_over_amount <= amount
+#So need to compute |len(coins)|*amount key value pairs in memo_dict
+# Time complexity  - O(len(coins)*amount)
+# Space complexity - O(len(coins)*amount)
 
 
 
