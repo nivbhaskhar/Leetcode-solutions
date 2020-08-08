@@ -9,7 +9,7 @@ Code and whiteboard solutions to leetcode problems I worked on
 406 - [Queue Reconstruction by Height](406_QueueReconstructionByHeight.py)  
 518 - [Coin Change 2](518_CoinChange2.py)  
 809 - [Expressive Words](809_ExpressiveWords.py)   (_TODO_)  
-
+973 - [K Closest Points to Origin](973_KClosestPointsToOrigin.py)  
 
 
 ## Whiteboard
@@ -19,4 +19,4 @@ Code and whiteboard solutions to leetcode problems I worked on
 406 - [Queue Reconstruction by Height](406_QueueReconstructionByHeight_wb.pdf) _Category: Sorting_  
 518 - [Coin Change 2](518_CoinChange2_wb.pdf) _Category: DP/Memo_   
 809 - [Expressive Words](809_ExpressiveWords_wb.pdf) _Category: Two pointers_  
-
+973 - [K Closest Points to Origin](973_KClosestPointsToOrigin_wb.pdf) _Category: Heaps_
