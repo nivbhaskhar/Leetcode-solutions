@@ -1,0 +1,32 @@
+141 - Intersection of linked list
+
+Idea : Have two pointers one at the start, one at the "end"  .... make them meet if cycle, else no.
+
+But what is "end" of a linked list if there's a cycle ...
+
+Maybe have two pointers, and have them move at different speeds. If cycle, they will eventually move into the cycle and then meet (relative speed of one will become 0 and the other will become positive.)
+
+Time Complexity analysis
+-------------------
+n = number of nodes in linked list
+If no cycle, each pointer traverses the list once - O(n)
+
+Termination of algo proof:
+
+If cycle, once pointers enter the cycle, tortoise is moving at speed 1 unit/step and hare at 2 units/step. Relative speeds are 0 and 1 respectively. So Hare will meet tortoise eventually (think of tortoise staying put and hare moving in circle)
+
+
+
+If cycle has length k, label vertices 0,1...k-1.
+Assume tortoise at pos 0 and hare at pos non-zero s
+In t steps, tortoise would be at t mod k
+Hare would be at s+2t mod k
+Want s+2t = t mod k
+Want s = -t mod k
+
+s < k
+t = k-s
+
+in k-s steps, tortoise would be at k-s and hare at s + 2(k-s) = 2k-s = k-s mod k
+
+So O(n) again
