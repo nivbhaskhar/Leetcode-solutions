@@ -1,0 +1,41 @@
+102. Binary Tree Level Order Traversal
+
+
+Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+
+
+BFS with a modification
+
+
+start = root
+
+visited = {root: 0}
+
+current_level = 0
+
+list_of_all_level_lists = []
+
+current_level_list = []
+
+to_be_explored = queue([start])
+
+while to_be_explored:
+
+  pop the queue
+  current_vertex = popped vertex
+  if level of current_vertex is same as current_level, add current_vertex to current_level_list.
+  otherwise: 
+    add current_level_list to list_of_all_level_lists
+    update current_level = level of current_vertex
+    start a new current_level_list = []
+    add current_vertex to current_level_list.
+    visit unvisited neighbors, add their levels to visited dictionary, add them to to_be_explored.
+
+add the last current_level_list after exiting the while loo[
+
+
+* take care of empty tree
+     
+
+
+
