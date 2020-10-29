@@ -13,6 +13,7 @@ Code and whiteboard solutions to leetcode problems I worked on
 809 - [Expressive Words](809_ExpressiveWords.py)   (_TODO_)  
 973 - [K Closest Points to Origin](973_KClosestPointsToOrigin.py) 
 978 - [Longest Turbulent Subarray](978_LongestTurbulentSubarray.py) 
+1091 - [Shortest Path in Binary Matrix](1091_ShortestPathInBinaryMatrix)   
 1162 - [As far from land as possible](1162_FarFromLand.py) 
 
 
@@ -27,6 +28,7 @@ Code and whiteboard solutions to leetcode problems I worked on
 809 - [Expressive Words](809_ExpressiveWords_wb.pdf) _Category: Two pointers_  
 973 - [K Closest Points to Origin](973_KClosestPointsToOrigin_wb.pdf) _Category: Heaps_
 978 - [Longest Turbulent Subarray](978_LongestTurbulentSubarray_wb.pdf) _Category: Sliding Window_ (_TODO_)
+1091 - [Shortest Path in Binary Matrix](1091_ShortestPathInBinaryMatrix_wb.txt) _Category: BFS_    
 1162 - [As far from land as possible](1162_FarFromLand_wb.pdf) _Category: BFS_ (_TODO_) 
 
  

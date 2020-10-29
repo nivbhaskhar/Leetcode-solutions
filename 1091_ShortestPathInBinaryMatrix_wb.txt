@@ -1,0 +1,5 @@
+#1091 - Shortest Path in Binary matrix
+
+- Set up graph with matrix grid with value 0 as vertices etc
+- Run BFS with start node =(0,0)
+- Store level of each vertex in visited dictionary
