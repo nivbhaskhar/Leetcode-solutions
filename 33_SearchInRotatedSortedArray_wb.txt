@@ -1,0 +1,35 @@
+33. Search in Rotated Sorted Array
+
+(exactly one dec)
++ + + + - + + + 
+
+
+0123 (4)
+
+s,s+1,..s+(n//2)-1
+
+
+4567012
+
+[a > c] => a< max - min< ..c 
+
+[a < c] => a ....c 
+
+
+Two intervals  [a,c], [b,d]. 
+if a < c => if a <= target <= c, search in [a,c], else search in [b,d] ** (a<=c to take care of singleton interval)
+if a > c => if b <= target <= d, search in [b,d], else search in [a,c]
+
+
+base case - [a,c] or [a] ..
+
+
+Uses uniqueness of numbers in array. If not unique, so can have interval [a,a]
+
+
+might mean ... a min a a 
+
+or just a a a ..a . Can't distinguish.
+
+
+

@@ -7,6 +7,7 @@ Code and whiteboard solutions to leetcode problems I worked on
 3 - [Longest Substring Without Repeating Characters](3_LongestSubstringWithoutRepeatingCharacters.py)
 17 - [Letter Combinations Of Phone Numbers](17_LetterCombinationsOfPhoneNumber.py)   
 21 - [Merge Two Sorted Lists](21_MergeTwoSortedLists.py)
+33 - [Search in Rotated Sorted Array](33_SearchInRotatedSortedArray.py)  
 34 - [Find First Last Position In Sorted Array](34_FindFirstLastPositionInSortedArray.py)  
 75 - [Sort Colours](75_SortColours.py)   
 102 - [Binary Tree Level Order Traversal](102_BinaryTreeLevelOrderTraversal.py)
@@ -29,6 +30,7 @@ Code and whiteboard solutions to leetcode problems I worked on
 3 - [Longest Substring Without Repeating Characters](3_LongestSubstringWithoutRepeatingCharacters_wb.txt) _Category: Sliding Window_
 17 - [Letter Combinations Of Phone Numbers](17_LetterCombinationsOfPhoneNumber_wb.pdf) _Category: Recursion_  
 21 - [Merge Two Sorted Lists](21_MergeTwoSortedLists_wb.txt) _Category: Linked Lists_
+33 - [Search in Rotated Sorted Array](33_SearchInRotatedSortedArray_wb.txt) _Category: Binary Search_  
 34 - [Find First Last Position In Sorted Array](34_FindFirstLastPositionInSortedArray_wb.txt) _Category: Binary Search_          
 75 - [Sort Colours](75_SortColours_wb.pdf) _Category: Sorting_  
 102 - [Binary Tree Level Order Traversal](102_BinaryTreeLevelOrderTraversal_wb.txt) _Category: BFS_
