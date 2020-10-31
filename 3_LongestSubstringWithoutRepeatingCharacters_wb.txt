@@ -1,0 +1,59 @@
+3. Longest Substring Without Repeating Characters
+
+
+Idea : 
+
+abcabcbb 
+
+
+Sliding window, have a start and end pointer
+move end pointer across the word
+maintain a dictionary, with frequencies of letters seen in the window
+if any frequency increases to > 1, move start pointer till that becomes back to 1.
+take the max of valid windows
+
+Pseudocode:
+
+def lengthOfLongestSubstring(self, s: str) -> int:
+    freq_dict = defaultdict(int)
+    longest_window = 0 
+    n = len(s)
+    start = 0
+    end = 0
+    while(end < n):
+       #window is [start,end]
+
+       #Update freq_dict by newest letter added
+       freq_dict[s[end]]+= 1
+       if freq_dict[s[end]] > 1:
+	  #window is invalid
+          while(freq_dict[s[end]]>1):
+              freq_dict[s[start]] -= 1
+              start += 1    
+       
+       longest_window = max(longest_window, end-start+1)
+       end += 1
+    return longest_window
+
+
+
+Complexity :
+
+O(n)
+
+
+Dry run
+
+bbb
+
+s=0, e= 0, {b:1}, w = 1
+s=1, e=1, {b:1}, w=max(1,1)
+s=2, e=2, {b:1}, w=max(1,1)
+
+
+
+
+
+
+
+

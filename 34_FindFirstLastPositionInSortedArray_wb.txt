@@ -1,0 +1,33 @@
+34. Find First and Last Position of Element in Sorted Array
+
+
+[5,7,7,8,8,10]
+
+012345  
+s s+1 s+2 ... s+(e-s)
+
+Modified binary search (take searching for first/last index as a parameter)
+
+
+mid-point = floor(n/2)
+if target < mid-point:
+   search f, l in l[0:mid-point]
+
+if target > mid-point:
+   search for f,l in l[mid-point+1:]
+
+if target == mid-point:
+   search for f in l[0:mid-point]. If nothing, f = mid-point
+   search for l in l[midpoint+1:]. If nothing, l = mid-point
+   
+Complexity 
+
+O(log n)
+
+ 
+
+    
+
+
+
+

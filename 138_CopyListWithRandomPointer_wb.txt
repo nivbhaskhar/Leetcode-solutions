@@ -1,0 +1,8 @@
+138. Copy List with Random Pointer
+
+
+Create a copy of a linked list with random pointers pointing to old list
+While creating copy, maintain old_to_new_dict mapping old pointers to new ones
+Run through new linked list again and update the random pointers to point to the new linked list nodes.
+
+O(|linked list|)

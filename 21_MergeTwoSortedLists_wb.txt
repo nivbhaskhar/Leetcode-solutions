@@ -1,0 +1,52 @@
+21. Merge Two Sorted Linked Lists
+
+1->2->4
+
+1->3->4
+
+
+1->1->2->3->4->4
+
+
+pointer_i at linked_list_i
+create a dummy root
+set current_node = dummy root
+
+while at least one pointer is not null, 
+      create a next node to current node
+      set the next node's value = smaller(pointer_is)
+      move the smaller pointer_i to its next value
+      move current_node to its next
+
+
+
+
+        root = ListNode(0)
+        pointer_1 = l1
+        pointer_2 = l2
+        current_node = root
+        while(pointer_1 is not None or pointer_2 is not None):
+            current_node.next = ListNode(0)
+            current_node = current_node.next
+            val_1 = math.inf
+            val_2 = math.inf
+            if pointer_1 is not None:
+                    val_1 = pointer_1.val
+            if pointer_2 is not None:
+                     val_2 = pointer_2.val 
+            if val_1 <= val_2:
+                    current_node.val = val_1
+                    pointer_1 = pointer_1.next
+            else:
+                    current_node.val = val_2
+                    pointer_2 = pointer_2.next
+
+
+
+        return root.next
+        
+
+      
+ Complexity analysis
+O(|l_1| + |l_2|)   
+      

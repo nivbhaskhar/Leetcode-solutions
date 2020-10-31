@@ -1,0 +1,68 @@
+139. Word Break
+
+Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words.
+
+
+Idea : Run over the string. For every non-empty prefix that is in dictionary, check if the suffix can be segmented. If so, return True. Otherwise return False
+
+Pseudo code:
+
+
+def wordBreak_ineff(self, s: str, wordDict: List[str]) -> bool:
+    if s=='':
+       return True
+    set_of_words = set(wordDict)
+    prefix = ''
+    for pos,character in enumerate(s):
+	prefix += character
+        suffix = s[pos+1:]
+        if prefix in wordDict and self.wordBreak(suffix, wordDict):
+             return True
+    return False
+
+Complexity analysis
+
+f(n) = f(n-1) + f(n-2) + ....+f(1) + O(n^2)
+
+= n^2 + (n-1)^2 + 2(n-2)^2 + 3(n-3)^2  + ... 
+
+= O(n^4)
+
+To make it more efficient, delete the slicing. Pass the string by first and last positions
+Also memoize
+
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        n = len(s)
+        set_of_words = set(wordDict)
+        slices = {}
+
+        def is_concatenated(first_pos, last_pos):
+            if (first_pos, last_pos) in slices:
+                return slices[(first_pos, last_pos)]
+            if first_pos > last_pos:
+                slices[(first_pos, last_pos)]=True
+                return True
+            prefix_list = []
+            for pos in range(first_pos,last_pos+1):
+                prefix_list.append(s[pos])
+                if ''.join(prefix_list) in set_of_words and is_concatenated(pos+1,last_pos):
+                     slices[(first_pos, last_pos)]=True 
+                     return True
+            slices[(first_pos,last_pos)]=False
+            return False
+
+
+        return is_concatenated(0,n-1)
+        
+
+
+
+Complexity : compute is_concatenated for n inputs (last_pos is always n-1)
+For each is_concatenated call -> O(n) # of prefixes worst case, and O(n) for each concatenation of prefix, so it is O(n^2) worst case for each is_concatenated call
+
+So over all O(n^3) complexity
+
+
+
