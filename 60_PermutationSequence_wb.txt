@@ -1,0 +1,56 @@
+60. Permutation Sequence
+
+Find the k-th permutation of 1,2,...n
+
+Approach 1 : Find "next-permutation" of a given one.
+Then use that to find the k-th permutation
+
+
+For finding next-permutation 
+
+53421
+
+Find the smallest suffix which is in descending order. (eg : 421). Pick the one to its right. So (3 421). You can rearrange (3421) to get the next permutation.
+
+You want to replace "3" with something from "421". Pick the first number bigger than it.
+
+(4 "321"). Then reverse the suffix to make it ascending (4 123)
+
+The next permutation is "54123"
+
+Complexity
+
+O(n) for finding next-perm. So O(kn) for approach 1
+
+
+
+Approach 2 :  The first (n-1)! permutations begin with 1, the second (n-1)! permutations begin with 2 etc. So find out which is the beginning number for the k-th permutation. Then  recurse
+
+l = [a_0,a_1,a_2,...a_{n-1}] ascending
+
+ans_list = []
+numbers_allowed = set(range(1,n+1))
+find_starting_term(perm_len, k):
+    l = q(perm_len-1)! + r
+    q = 0, or q=1,r=0 -> 1
+    q=1, r > 0 or q=2, r=0 -> 2
+    ....
+    starting_term = s-th least element in numbers_allowed
+    starting_term is the starting_term of perm
+    append(starting_term) to ans_list
+    delete starting_term from numbers_allowed
+    find_starting_term(perm_len-1, r') where r' = r if r > 0 and r'= (perm_len-1)! if r=0
+
+Complexity
+
+O(n) for finding the s-th least number in a list of size n.
+Recursion called n times, so O(n^2)
+
+
+
+   
+
+
+
+
+
