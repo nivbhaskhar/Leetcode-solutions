@@ -1,0 +1,103 @@
+22. Generate Parentheses
+
+
+Recurrence
+
+( x ) (n-1-x ) 
+
+
+
+x= 0 ""
+x=1  ()
+
+x=2
+
+()()
+(())
+
+x=3
+
+def f(n):
+  ans_list = []
+  #Base case!!
+  if n==0:
+	return [""]
+  for x in range(n):
+      A = f(x)
+      B = f(n-1-x)
+      for a in A:
+	for b in B:
+	    ans_list.append("(" + a  + " )" + b)
+
+  return ans_list
+
+
+
+Catalan : 1/n+1 C(2n n)
+
+f(n) = f(0)f(n-1) + f(1)f(n-2) +... f(n-1)f(0)
+
+
+
+Explicit graph
+
+
+ ""  0
+(  )  1
+
+(( () )( )) 2
+
+...
+
+
+
+DFS without explicit graph
+
+ans_list = []
+
+def f(node_string, open, close):
+   if open==n and close==n:
+	ans_list.append(node_string)
+	return
+   if open+1 <= n:
+   	f(node_string+"(", open+1, close)
+   if close+1 <= open and close+1 <= n:
+	f(node_string+")", open, close+1)
+   
+
+f("",0,0)
+
+
+Back-tracking
+
+ans_list = []
+state = {node_string:"", open: 0, close:0}
+def f():
+   if state[open]==n and state[close]==n:
+	ans_list.append(state[node_string])
+	return
+   if state[open]+1 <= n:
+        state[node_string] + ="("
+        state[open] += 1
+    	f()
+        state[node_string].pop()
+        state[open] -=1
+   if close+1 <= open and close+1 <= n:
+	f(node_string+")", open, close+1)
+   
+
+f("",0,0)
+   
+    
+
+
+
+
+  
+    
+
+   
+
+
+
+
