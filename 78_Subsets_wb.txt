@@ -1,0 +1,69 @@
+78. Subsets
+
+
+
+[0,1,2]
+   ^
+
+           .
+     no0/    \ 0           
+       {}     {0}           0
+      /\       /\          
+     {}.{1} {0}.{0,1}..     1
+
+
+leaf nodes are the subsets
+
+def dfs(set_so_far, pos):
+  if pos == len(A):
+    # add set_to_far to answer
+  else:
+    dfs(set_so_far, pos + 1)
+    dfs(set_so_far | {A[pos}, pos + 1)
+
+
+
+
+set_so_far = []
+def dfs(pos):
+  if pos == len(A):
+     # add set_so_far to answer
+     #(be careful to add a copy of the set_so_far!! as set_so_far is changing, so adding it will result in ans_list looking like copies of the last subset)
+  else:
+     # do not add pos
+     dfs(pos+1)
+     # add set to pos
+     set_so_far.append(A[pos])
+     dfs(pos+1)
+     set_so_far.pop()
+
+
+Bit mask
+
+
+5 >> 100 --> 0
+
+for num in range(2**n):
+  #(num >> 0) & 1  -- least significant bit
+  #(num >> 1) & 1  -- second least significant bit 
+  #(num >> i) & 1 -- third least significant bit ..
+
+
+Itertools
+
+for k in range(n):
+  for subset in itertools.combinations(range(n), k):
+
+
+
+    
+
+k
+
+       []
+    /  |  \
+   [1] [2] .... [n]
+  / | \
+[1,2]
+
+

@@ -11,7 +11,8 @@ Code and whiteboard solutions to leetcode problems I worked on
 33 - [Search in Rotated Sorted Array](33_SearchInRotatedSortedArray.py)  
 34 - [Find First Last Position In Sorted Array](34_FindFirstLastPositionInSortedArray.py)
 60 - [Permutation Sequence](60_PermutationSequence.py)  
-75 - [Sort Colours](75_SortColours.py)   
+75 - [Sort Colours](75_SortColours.py)
+78 - [Subsets](78_Subsets.py)   
 102 - [Binary Tree Level Order Traversal](102_BinaryTreeLevelOrderTraversal.py)
 138 - [Copy List With Random Pointer](138_CopyListWithRandomPointer.py)
 139 - [Word Break](139_WordBreak.py)
@@ -37,7 +38,8 @@ Code and whiteboard solutions to leetcode problems I worked on
 33 - [Search in Rotated Sorted Array](33_SearchInRotatedSortedArray_wb.txt) _Category: Binary Search_  
 34 - [Find First Last Position In Sorted Array](34_FindFirstLastPositionInSortedArray_wb.txt) _Category: Binary Search_  
 60 - [Permutation Sequence](60_PermutationSequence_wb.txt) _Category: Misc_          
-75 - [Sort Colours](75_SortColours_wb.pdf) _Category: Sorting_  
+75 - [Sort Colours](75_SortColours_wb.pdf) _Category: Sorting_
+78 - [Subsets](78_Subsets_wb.txt) _Category: Recursion/Backtracking_  
 102 - [Binary Tree Level Order Traversal](102_BinaryTreeLevelOrderTraversal_wb.txt) _Category: BFS_
 138 - [Copy List With Random Pointer](138_CopyListWithRandomPointer_wb.txt) _Category: Linked Lists_
 139 - [Word Break](139_WordBreak_wb.txt) _Category: DP/Memo_ 
