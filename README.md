@@ -25,9 +25,9 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 399 | BFS |  Evaluate Division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
 | 406 | Sorting | Queue Reconstruction by Height | [python](406_QueueReconstructionByHeight.py) | [explanation](406_QueueReconstructionByHeight_wb.pdf) |
 | 518 | DP/Memoize | Coin Change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
-| 809 | Two pointers | Expressive Words | [python](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
+| 809 | Two pointers | Expressive Words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
 | 973 | Heaps | K Closest Points to Origin | [python](973_KClosestPointsToOrigin.py) | [explanation](973_KClosestPointsToOrigin_wb.pdf) |
-| 978 | Sliding Window | Longest Turbulent Subarray | [python](978_LongestTurbulentSubarray.py)| [explanation](978_LongestTurbulentSubarray_wb.pdf)|
+| 978 | Sliding Window | Longest Turbulent Subarray | [python](978_LongestTurbulentSubarray.py)| [TODO](978_LongestTurbulentSubarray_wb.pdf)|
 | 1047 | Stack | Remove All Adjacent Duplicates | [python](1047_RemoveAllAdjacentDuplicates.py) | [explanation](1047_RemoveAllAdjacentDuplicates_wb.txt)|
 | 1091 | BFS | Shortest Path in Binary Matrix | [TODO](1091_ShortestPathInBinaryMatrix)| [explanation](1091_ShortestPathInBinaryMatrix_wb.txt)|
 |1162 | BFS | As far from land as possible | [python](1162_FarFromLand.py) | [TODO](1162_FarFromLand_wb.pdf)|
