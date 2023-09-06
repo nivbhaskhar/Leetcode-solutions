@@ -1,0 +1,59 @@
+2845. Count Of Interesting SubArrays
+
+Problem:
+https://leetcode.com/problems/count-of-interesting-subarrays/
+
+
+Idea:
+We'll scan the array from left to right.
+When we are at position pos, we'll track how many interesting subarrays are there of the shape [l, pos] (both inclusive)
+i.e. how many interesting subarrays are there ending in position pos but starting at any l <= pos
+
+Since everything is about elements being k mod M (set modulo = M), turn the initial array into a boolean array
+where a number is 1 if it is k mod M and 0 if not
+
+Let f([l, pos]) = number of 1s mod M in the subarray [l, pos]
+
+Standard trick to find f is to track the following function c instead
+c(pos) = number of 1s mod M in the subarray [0, pos] == [:pos+1] 
+
+
+f([l, pos]) = c[pos]-c[l-1]
+
+
+To decide how many l's are candidates to make [l, pos] interesting, we just need to figure out
+
+For how many l's <=pos , is f([l, pos]) == k mod M
+i.e for how many l's is c(pos)-c(l-1) == k mod M
+i.e. for how many l's is c(l-1) == c(pos)-k mod M
+
+Let x =  c(pos)-k
+So it makes sense to keep track of x: list of positions p so that c(p) = x
+
+Let's call this dictionary d = {x: list of positions p so that c(p) = x} which we'll incrementally build
+the answer for how many l's <=pos , is f([l, pos]) == k mod M  is just length of d[x] where x = c(pos)-k mod M
+
+To make this work, we need to make sure of 2 things:
+
+1. When pos = 0, a possible interesting array is [l=0, pos=0], this can only be 
+considered if l-1 = -1 is a valid position we keep track of in our d
+
+So we should initialize our d to be d = {0: -1} which represents the base case of the empty array = [:-1+1] having count 0
+
+
+2. Secondly, we should update d to include current position pos AFTER we process the answer for pos
+this is for the edge case when k = 0 
+when we are processing position pos,  we'll be checking for how many l's is c(l-1) == c(pos) mod M since k = 0
+we want this to be the length of d[c(pos)]
+
+if we update d before we process the answer for pos, i.e if c(pos) = x and d[x] already contains pos, then we'll count an extra invalid l 
+coming from l-1 = pos --> invalid interval  [pos+1, pos]
+
+So to prevent this, we'll update d[x] to have pos AFTER we finish processing the answer for how many interesting subarrays are there of the shape [l, pos]
+
+
+
+
+
+
+
