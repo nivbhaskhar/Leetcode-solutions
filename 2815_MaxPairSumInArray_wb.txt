@@ -1,0 +1,16 @@
+2815. Max Pair Sum in Array
+# https://leetcode.com/problems/max-pair-sum-in-an-array/
+
+
+Idea : 
+have a sub routine which finds the max digit of a number x (assume positive) --> can be done in O(log x)
+cluster nums array by max digit of each number --> can be done in O(|nums|)
+eg: nums = [23,34,123,41] --> {3: [23,123], 4:[34,41]} 
+for each cluster
+--> move max element to end by 1 pass, move the second max element to end but one position in another linear pass
+--> sum the max and second max and call it the value of the cluster , if not enough max elements, value = -1
+--> can be done in O(size of cluster)
+
+take max(value of cluster) for each cluster
+
+Total complexity = O(|nums|) + (sum over clusters of O(|cluster|)) + O(|nums| log x) where x = max(nums)

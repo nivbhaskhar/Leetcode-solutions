@@ -1,5 +1,5 @@
-#https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/
-
+#https://leetcode.com/problems/longest-substring-without-repeating-characters
+from collections import defaultdict
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
