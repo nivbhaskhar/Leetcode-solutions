@@ -33,4 +33,4 @@ Solutions with code and explanations to leetcode problems I have worked on
 |1162 | BFS | As far from land as possible | [python](1162_FarFromLand.py) | [TODO](1162_FarFromLand_wb.pdf)|
 |2815 | Arrays | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
 |2843 | Arrays | Count symmetric integers | [python](2843_CountSymmetricIntegers.py) | [explanation](2843_CountSymmetricIntegers_wb.txt)|
-|2845 | Arrays | Count  of interesting sub arrays | [python](2845_CountOfInterestingSubArrays.py) | [explanation](2845_CountOfInterestingSubArrays_wb.txt)|
+|2845 | Misc | Count  of interesting sub arrays | [python](2845_CountOfInterestingSubArrays.py) | [explanation](2845_CountOfInterestingSubArrays_wb.txt)|
