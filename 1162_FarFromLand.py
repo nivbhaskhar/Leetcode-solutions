@@ -3,7 +3,7 @@
 import pprint
 from collections import deque
 class Solution:
-    def maxDistance(self, grid: List[List[int]]) -> int:
+    def maxDistance(self, grid: list[list[int]]) -> int:
         rows = len(grid)
         cols = len(grid[0])
         def nbhrs(i,j):

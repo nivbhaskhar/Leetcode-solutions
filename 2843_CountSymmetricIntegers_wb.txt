@@ -1,0 +1,11 @@
+2843. Count Symmetric Integers
+
+Problem :
+https://leetcode.com/problems/count-symmetric-integers/
+
+Idea:
+
+Have a subroutine which gets the list of digits of a number x --> O(log x)
+if list of digits is even, return sum of first half == sum of second half, else False --> O(|c|) where c is size of list of digits
+for a number x, the size of digit list will be log x
+for an interval [a,b], complexity will be O(|b-a|*(log b))
