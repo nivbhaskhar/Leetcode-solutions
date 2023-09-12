@@ -1,0 +1,85 @@
+516. Longest Palindromic Subsequence
+
+Problem:
+https://leetcode.com/problems/longest-palindromic-subsequence/
+
+f(a,b) = longest palindromic subseq length in arr[a:b+1]
+
+f(invalid tuples a>b) = 0
+
+g(a,b) = smallest integer b>= x >= a so that arr[b] == arr[x] 
+
+
+
+find f(0,n-1), where arr length is n
+
+
+Base case:
+
+a=b
+f(a,b) = 1
+
+
+
+b >= a+1
+
+f(a,b) = 
+
+if g(a,b) == b:
+   m = max(1, f(a,b-1)) # arr[b] is in palindrome, vs is not
+else:
+   max(2+ f(g(a,b)+1, b-1), f(a,b-1)) # arr[b] is in palindrome vs is not
+
+
+actually, even the case a=b, can be clubbed into the next one.
+since g(a,b) = b if a=b,  and m = max(1, f(b,b-1)) = max(1,0) = 1
+
+
+
+
+
+
+
+
+
+              b-1, b
+
+
+a              *  ??
+
+
+g(a,b)+1       *  
+
+
+
+ 0 1 2 . . n-3 n-2 n-1
+0 .
+1   .
+2
+.
+.
+n-3           .             
+n-2             .
+n-1               .
+
+
+direction : loop b from 0 to n-1 and a from 0 to b
+i.e fill up the above table column by column going for top to bottom of column
+
+
+
+to compute entries f(*, b), you only need entries for f(*, b-1)
+so just save {a: f(a,b-1)} after computing f(*,b-1) and use it when computing f(*,b)
+
+
+to compute g(a,b) --> precompute for each character, the list of positions in which it occurs
+this is an ordered list, and you want the least integer x so that x>= a and <=b
+this can be done in log n time, n = length of ordered list by binary searching
+python's bisect_left actually works here 
+
+overall time complexity is O(n^2 log n) -> for looking at (a,b) --> n^2 and inside each (a,b) --> log n time to compute g(a,b)
+and O(1) time to do other updates
+
+space complexity is O(n) --> need to store 2 dictionaries {a: f(a,b-1)}, {a: f(a,b)} at each point of time
+
+

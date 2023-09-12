@@ -24,6 +24,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 322 | DP/Memoize | Coin Change | [python](322_CoinChange.py) | [explanation](322_CoinChange_wb.txt)|
 | 399 | BFS |  Evaluate Division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
 | 406 | Sorting | Queue Reconstruction by Height | [python](406_QueueReconstructionByHeight.py) | [explanation](406_QueueReconstructionByHeight_wb.pdf) |
+| 516 | DP/Memoize | Longest Palindromic Subsequence | [python](516_LongestPalindromicSubsequence.py) | [explanation](516_LongestPalindromicSubsequence_wb.txt) 
 | 518 | DP/Memoize | Coin Change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
 | 809 | Two pointers | Expressive Words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
 | 973 | Heaps | K Closest Points to Origin | [python](973_KClosestPointsToOrigin.py) | [explanation](973_KClosestPointsToOrigin_wb.pdf) |
