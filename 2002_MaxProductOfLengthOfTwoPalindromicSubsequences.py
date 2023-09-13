@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/
+
 from itertools import combinations
 from collections import defaultdict
 class Solution:
