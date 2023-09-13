@@ -1,0 +1,24 @@
+2002. Maximum Product of the Length of Two Palindromic Subsequences
+
+Problem:
+https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/
+
+
+
+See problem #516 to find the longest palindromic subseq in a string
+
+Basically, partition string into 2 disjoint subseq -- (i.e. pick a set of positions for subseq 1 and put the remaining positions into subseq 2)
+
+for each subseq --> treat as a string, and find longest palindromic subseq in it
+find the product
+
+take the max over all paritions of string into 2 disjoin subseq
+
+
+complexity -
+
+O(2^n) pairs of disjoint sequences for string of length n
+O(n^2) to find longest subseq
+O(2^n) to make a scan of largest product
+
+so overall O(2^n * n^2) complexity
