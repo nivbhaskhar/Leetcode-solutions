@@ -5,6 +5,38 @@ from collections import defaultdict
 import bisect
 
 class Solution:
+    def longestPalindromeSubseq(self, s: str) -> int:
+        n = len(s)
+        
+        prev_max_length = defaultdict(int)
+
+        for end_pos in range(n):
+            current_max_length = defaultdict(int)
+            for start_pos in range(end_pos, -1, -1):
+                if start_pos == end_pos:
+                    current_max_length[start_pos] = 1
+                else:
+                    if s[start_pos] == s[end_pos]:
+                        current_max_length[start_pos] = 2 + prev_max_length[start_pos+1]
+                    else:
+                        current_max_length[start_pos] = max(prev_max_length[start_pos], current_max_length[start_pos+1])
+                #debug[start_pos, end_pos] = current_max_length[start_pos]
+
+            # set prev_max_length = current_max_length
+            prev_max_length = current_max_length
+
+        #for a,b in debug:
+        #    print(s[a:b+1], debug[a,b])
+
+        return current_max_length[0]
+
+
+
+# Complexity: O(n^2)
+        
+
+
+class InitialSolution:
     def smallestNumberInInterval(self, a: int, b: int, l: list)->int:
         """
         Given an ordered list of numbers l and a<=b where l definitely contains b, returns the smallest integer x in l which is >= a and <= b

@@ -3,9 +3,68 @@
 Problem:
 https://leetcode.com/problems/longest-palindromic-subsequence/
 
+
+Modified approach:
+
+f(a,b) = longest palindromic subseq length in arr[a:b+1]
+f(invalid tuples a>b) = 0
+
+find f(0,n-1), where arr length is n
+
+
+Base case:
+
+a = b:
+f(a,b) = 1
+
+b > a:
+
+(see initial approach below for how I first got sidetracked into a more complicated recursion set up)
+
+if arr[a] == arr[b]:
+   we can either have the palindrome start and end with positions a, b in which case it is 2 + f(a+1, b-1)
+   we can skip position a -- f(a+1,b)
+   we can skip position b -- f(a,b-1)
+
+   so it is max(2+f(a+1,b-1), f(a+1,b), f(a,b-1))
+
+   but thinking more, why would we skip position a and keep position b / skip position b and keep position a ?
+   eg:  if string[a:b+1] looks like c*****c, there's no advantage in making a palindrome subsequence from c****** or *******c
+   it will not be better than making a palindrome subsequence from c[subseq ****]c
+
+   so in fact, if arr[a] == arr[b], the max will be 2+f(a+1,b-1)
+
+if arr[a] != arr[b]:
+   we can skip position a -- f(a+1,b)
+   we can skip position b -- f(a,b-1)
+
+   so it is max(f(a+1,b), f(a,b-1))
+
+
+         b-1  b 
+a         *   ??
+a+1       *   *
+
+Dependency of f(a,b) (?) is on the *s f(a,b-1), f(a+1,b), f(a+1,b-1)
+
+So it makes sense to compute f(., b) for b from 0 to n-1 [ie. column by column]
+and to compute f(., b), vary . from b to 0
+
+i.e. fill column from bottom
+
+
+
+
+
+
+
+Initial approach: 
+
 f(a,b) = longest palindromic subseq length in arr[a:b+1]
 
 f(invalid tuples a>b) = 0
+
+* I got sidetracked into this approach because I set up the recursion of f(a,b) in a convoluted way
 
 g(a,b) = smallest integer b>= x >= a so that arr[b] == arr[x] 
 
@@ -25,6 +84,7 @@ b >= a+1
 
 f(a,b) = 
 
+* convoluted recursion
 if g(a,b) == b:
    m = max(1, f(a,b-1)) # arr[b] is in palindrome, vs is not
 else:
