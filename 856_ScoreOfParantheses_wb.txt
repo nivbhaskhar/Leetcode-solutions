@@ -1,0 +1,30 @@
+856. Score of Parentheses
+
+Problem:
+https://leetcode.com/problems/score-of-parentheses/
+
+
+
+((())())
+
+have a stack which stores scores and '(' characters
+
+run through expression
+put in a stack any ( you see
+if you see ) 
+
+
+* pop all elements in stack until you get a (, pop that also
+* add all the scores you have popped
+* if you saw no numbers, then score = 1, else score = 2*sum of scores
+* put that score back in the stack
+
+
+
+final output = sum of scores in stack
+
+
+Linear time
+
+
+
