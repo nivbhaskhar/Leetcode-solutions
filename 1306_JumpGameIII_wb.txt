@@ -1,0 +1,60 @@
+1306. Jump Game III
+
+Problem:
+https://leetcode.com/problems/jump-game-iii/
+
+Idea:
+
+graph , 1 node for each position in list has a val
+start node
+edge : what nodes you can jump to
+
+end nodes = set of nodes with val 0
+
+is there a path from start node to one of the end nodes ?
+
+
+look at connected component of start node, and check if any end node is there in it
+
+
+dfs/bfs ? 
+
+let's do both
+
+dfs:
+
+visited = {node: False for each node}
+
+dfs(start, visited):
+	visit start
+	for nbhr of start:
+		if nbhr unvisited:
+			do dfs(nbhr, visited)
+		
+
+
+
+bfs:
+
+visited = {node: False for each node}
+visit start node
+
+
+queue = [start] # add start node to queue
+
+while queue is non-empty:
+	v = queue.popleft()
+	for nbhr of v:
+  		if nbhr is unvisited:
+			visit nbhr
+			add to queue
+
+
+
+
+
+
+
+
+
+
