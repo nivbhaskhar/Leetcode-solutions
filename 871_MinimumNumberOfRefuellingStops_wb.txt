@@ -1,0 +1,111 @@
+871. Minimum Number of Refueling Stops
+
+Problem:
+https://leetcode.com/problems/minimum-number-of-refueling-stops/
+
+Idea:
+
+
+
+f(fuel, pos of station) = min number of stops needed to reach target from pos with fuel = fuel in tank including current station
+
+
+f(start_fuel, 0) = ??
+
+
+f(fuel, k) = 
+
+if target - pos[k] <= fuel: 0
+else:
+
+if pos[k+1]-pos[k] <= fuel: --> either skip refueling and head to k+1 station/refuel and head to k+1 station
+
+min( 1+f(fuel[k]+fuel - (pos[k+1]-pos[k]), k+1), f(fuel- (pos[k+1]-pos[k]), k+1)
+
+
+else: 1+f(fuel[k] + fuel - (pos[k+1]-pos[k], k+1)
+
+
+f(, last station pos)
+
+
+if target has a fuel station
+f( >=0, target pos) = 0
+f( < 0, target pos) = -1
+
+actually f( <0, *) = -1
+
+this is not going to feasible, since ~ 10^9 fuel steps are there...
+
+
+
+----
+
+Alternate idea
+
+
+say you are at the last fuel stop, for what values of fuel that you arrive at the station, can you make it without refuelling/ make it with refuelling/ cannot make it to target
+
+station = last station
+
+fuel, fuel + fuel[station] 
+
+target-pos[station] = d 
+
+if d <= fuel, --> 0 o
+
+if fuel < d <= fuel + fuel[station] --> 1 *
+
+if d > fuel + fuel[station] --> -1 **
+
+solving
+
+
+---**--d-fuel[station] --*--- d ----o---
+
+
+play the same game to go from station to station
+
+
+
+d = pos[k+1]-pos[k]
+
+
+----- d-fuel[k] ----- d -------
+
+if you just land at station k with current fuel, 
+
+if current_fuel < d - fuel[k], you cannot make it to next station even and hence not to target -->-1
+if d-fuel[k] <= current_fuel < d, then you need to refuel at station k, and can make it to next station, so num stops += 1 and you are at next station with current_fuel = current_fuel -d
+
+
+if current_fuel >=d, you have a choice of whether to refuel at this stop or later..., how do we decide ???
+
+I got stuck at this point ---> but there's a greedy strategy that can be used
+
+
+Greedy strategy:
+Keep on going on current fuel till you reach an impossible situation (negative fuel), then retroactively decide that you should have refuelled at the station with max capacity that you have encountered.
+
+if even that doesnt help, you cannot reach target ever
+
+
+
+----
+Alternate DP idea
+
+f(i) = max distance you can reach with i stops
+
+f(0) = start_fuel
+
+f(1) = max[f(0) + fuel[station] for any station with pos[station] <= f(0)]
+
+f(k+1) = max[f(k) + fuel[station] for any station with pos[station] <= f(k)]
+
+
+.. pick min i so that f(i) >= target
+
+O(N^2) complexity
+
+
+

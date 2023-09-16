@@ -27,7 +27,8 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 516 | DP/Memoize | Longest Palindromic Subsequence | [python](516_LongestPalindromicSubsequence.py) | [explanation](516_LongestPalindromicSubsequence_wb.txt) 
 | 518 | DP/Memoize | Coin Change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
 | 809 | Two pointers | Expressive Words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
-| 856 | Stack | Score of Parantheses  | [python](856_ScoreOfParantheses.py) | [explanation](856_ScoreOfParantheses_wb.txt) |
+| 856 | Stack | Score of Parantheses  | [python](871_MinimumNumberOfRefuellingStops.py) | [explanation](871_MinimumNumberOfRefuellingStops_wb.txt) |
+| 871 | Greedy, Heap/DP | Minimum number of refuelling stops | [python](871_ScoreOfParantheses.py) | [explanation](871_ScoreOfParantheses_wb.txt) |
 | 973 | Heaps | K Closest Points to Origin | [python](973_KClosestPointsToOrigin.py) | [explanation](973_KClosestPointsToOrigin_wb.pdf) |
 | 978 | Sliding Window | Longest Turbulent Subarray | [python](978_LongestTurbulentSubarray.py)| [TODO](978_LongestTurbulentSubarray_wb.pdf)|
 | 1047 | Stack | Remove All Adjacent Duplicates | [python](1047_RemoveAllAdjacentDuplicates.py) | [explanation](1047_RemoveAllAdjacentDuplicates_wb.txt)|
