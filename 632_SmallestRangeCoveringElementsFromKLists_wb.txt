@@ -1,0 +1,12 @@
+632. Smallest Range Covering Elements from K Lists
+
+Problem:
+https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/
+
+Idea:
+
+Merge into a giant sorted list with unique elements
+
+keep track of which element occurred in which all lists
+
+now do sliding window on giant sorted list, where a valid window is a window with at least one elem from each list

@@ -91,21 +91,5 @@ if even that doesnt help, you cannot reach target ever
 
 
 
-----
-Alternate DP idea
-
-f(i) = max distance you can reach with i stops
-
-f(0) = start_fuel
-
-f(1) = max[f(0) + fuel[station] for any station with pos[station] <= f(0)]
-
-f(k+1) = max[f(k) + fuel[station] for any station with pos[station] <= f(k)]
-
-
-.. pick min i so that f(i) >= target
-
-O(N^2) complexity
-
 
 
