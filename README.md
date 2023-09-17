@@ -26,6 +26,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 406 | Sorting | Queue Reconstruction by Height | [python](406_QueueReconstructionByHeight.py) | [explanation](406_QueueReconstructionByHeight_wb.pdf) |
 | 516 | DP/Memoize | Longest Palindromic Subsequence | [python](516_LongestPalindromicSubsequence.py) | [explanation](516_LongestPalindromicSubsequence_wb.txt) 
 | 518 | DP/Memoize | Coin Change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
+| 632 | Heap, Sliding Window | Smallest Range Covering Elements from K Lists | [python](632_SmallestRangeCoveringElementsFromKLists.py) | [explanation](632_SmallestRangeCoveringElementsFromKLists_wb.txt) |
 | 809 | Two pointers | Expressive Words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
 | 856 | Stack | Score of Parantheses  | [python](856_ScoreOfParantheses.py) | [explanation](856_ScoreOfParantheses_wb.txt) |
 | 871 | Greedy, Heap/DP | Minimum number of refuelling stops | [python](871_MinimumNumberOfRefuellingStops.py) | [explanation](871_MinimumNumberOfRefuellingStops_wb.txt) |
