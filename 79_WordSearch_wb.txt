@@ -1,0 +1,14 @@
+79. Word Search
+
+Problem:
+https://leetcode.com/problems/word-search/
+
+Idea:
+Backtrack -- cleaner to use recursion to maintain the stack
+
+Assuming you have found word[:s], the recursive function tracks if you can continue this solution to find word[s:] without using the grid letters which were used in word[:s]
+
+the exploration is done dfs style, i.e. you keep trying to explore a nbhr and if it extends to a partial solution, continue trying to expand the partial solution
+
+
+The main thing to watch out for is to remember to reset the "used grid positions" if the current exploration to continue the solution fails.
