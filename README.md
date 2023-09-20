@@ -7,7 +7,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 
 | Number  | Category | Problem name | Code | Whiteboard |
 | :-------------: | :-------------: | :------------: | :-----: | :----------: |
-| 3 | Sliding Window  | Longest Substring Without Repeating Characters | [python](3_LongestSubstringWithoutRepeatingCharacters.py)| [explanation](3_LongestSubstringWithoutRepeatingCharacters_wb.txt)|
+| 3 | Sliding Window  | Longest substring without repeating characters | [python](3_LongestSubstringWithoutRepeatingCharacters.py)| [explanation](3_LongestSubstringWithoutRepeatingCharacters_wb.txt)|
 | 14 | Strings  | Longest common prefix | [python](14_LongestCommonPrefix.py)| [explanation](14_LongestCommonPrefix_wb.txt)|
 |17| Recursion | Letter combinations of phone numbers| [python](17_LetterCombinationsOfPhoneNumber.py) | [explanation](17_LetterCombinationsOfPhoneNumber_wb.pdf)|
 |21| Linked List | Merge two sorted lists | [python](21_MergeTwoSortedLists.py)| [explanation](21_MergeTwoSortedLists_wb.txt)|
