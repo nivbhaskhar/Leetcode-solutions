@@ -9,7 +9,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | :-------------: | :-------------: | :------------: | :-----: | :----------: |
 | 1 | Dictionary/Misc  | Two sum  | [python](1_TwoSum.py)| [explanation](1_TwoSum_wb.txt)|
 | 3 | Sliding Window  | Longest substring without repeating characters | [python](3_LongestSubstringWithoutRepeatingCharacters.py)| [explanation](3_LongestSubstringWithoutRepeatingCharacters_wb.txt)|
-| 14 | Strings  | Longest common prefix | [python](14_LongestCommonPrefix.py)| [explanation](14_LongestCommonPrefix_wb.txt)|
+| 14 | String  | Longest common prefix | [python](14_LongestCommonPrefix.py)| [explanation](14_LongestCommonPrefix_wb.txt)|
 |17| Recursion | Letter combinations of phone numbers| [python](17_LetterCombinationsOfPhoneNumber.py) | [explanation](17_LetterCombinationsOfPhoneNumber_wb.pdf)|
 | 18 | Strings  | 4Sum | [TODO](18_4Sum.py)| [TODO](18_4Sum_wb.txt)|
 |21| Linked List | Merge two sorted lists | [python](21_MergeTwoSortedLists.py)| [explanation](21_MergeTwoSortedLists_wb.txt)|
@@ -42,6 +42,6 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 1306 | BFS/DFS | Jump Game III | [python](1306_JumpGameIII.py)| [explanation](1306_JumpGameIII_wb.txt)|
 |1162 | BFS | As far from land as possible | [python](1162_FarFromLand.py) | [TODO](1162_FarFromLand_wb.pdf)|
 |2002 | Enumerative/DP | Max product of length of two palindromic subsequences | [python](2002_MaxProductOfLengthOfTwoPalindromicSubsequences.py) | [explanation](2002_MaxProductOfLengthOfTwoPalindromicSubsequences_wb.txt)|
-|2815 | Arrays | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
-|2843 | Arrays | Count symmetric integers | [python](2843_CountSymmetricIntegers.py) | [explanation](2843_CountSymmetricIntegers_wb.txt)|
+|2815 | Array | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
+|2843 | Array | Count symmetric integers | [python](2843_CountSymmetricIntegers.py) | [explanation](2843_CountSymmetricIntegers_wb.txt)|
 |2845 | Misc | Count  of interesting sub arrays | [python](2845_CountOfInterestingSubArrays.py) | [explanation](2845_CountOfInterestingSubArrays_wb.txt)|
