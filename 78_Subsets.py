@@ -9,8 +9,8 @@ class Solution:
         return(ans_list)
 
     def subsets_backtrack(self, nums: List[int]) -> List[List[int]]:
-         ans_list = []
-         subset_so_far = []
+        ans_list = []
+        subset_so_far = []
         def dfs(pos):
             #print(f"pos is {pos}")
             #print(f"subset is {subset_so_far}")
@@ -26,7 +26,7 @@ class Solution:
                 subset_so_far.append(nums[pos])
                 dfs(pos+1)
                 subset_so_far.pop()
-                dfs(0)
+        dfs(0)
                 
         return ans_list
 
