@@ -12,3 +12,12 @@ the exploration is done dfs style, i.e. you keep trying to explore a nbhr and if
 
 
 The main thing to watch out for is to remember to reset the "used grid positions" if the current exploration to continue the solution fails.
+
+Complexity
+----------
+4 directions, actually initial letter--> can explore 4 directions,
+from then on, can explore 3 directions (can't go back the direction you came from)
+
+If there are N letters in word, this is 4*3^(N-1) 
+
+and we might have to start from every position in the grid, so O(mn*3*4^(N-1))
