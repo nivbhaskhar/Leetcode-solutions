@@ -1,0 +1,36 @@
+1. Two Sum
+
+Problem:
+#https://leetcode.com/problems/two-sum/
+
+Idea: 
+want to find x, y so that nums[x]+nums[y] == target and x!=y
+
+i.e. want to find y, so that nums[y] == target-nums[x] and x!=y
+
+as you scan num from nums, left to right, record position in a dictionary
+also check if target-num exists in dictionary, if yes, then return current nums pos + target-num's position
+
+
+Edge case to consider, what if there are duplicates
+
+eg: [...3, ....3, ...]
+
+and target is 6
+
+
+so when inserting position of a num, check if it already exists and if target is 2*num, then return the answer as [earlier pos of num, current pos of num]
+
+
+note we can do it in 1 pass, i.e 
+i.e. want to find y, so that nums[y] == target-nums[x] and x!=y
+
+can be reframed as 
+
+i.e. want to find y > x, so that nums[y] == target-nums[x]
+
+
+complexity:
+
+time: linear 
+space : O(n) where n is size of nums since you have to build the dictionary

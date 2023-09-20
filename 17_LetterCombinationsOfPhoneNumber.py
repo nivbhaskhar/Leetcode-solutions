@@ -16,7 +16,7 @@ class Solution:
                    x += 1
 
 
-    def letterCombinations(self, digits: str, rec=False) -> List[str]:
+    def letterCombinations(self, digits: str, rec=False) -> list[str]:
         if not digits and rec:
             return ['']
         elif not digits:

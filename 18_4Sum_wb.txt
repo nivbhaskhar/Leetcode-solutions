@@ -1,0 +1,21 @@
+18. 4Sum
+
+Problem:
+https://leetcode.com/problems/4sum/description/
+
+Idea:
+
+
+x == t-current
+l
+
+
+x for x in l
+
+t-x for x in l
+
+
+
+
+
+
