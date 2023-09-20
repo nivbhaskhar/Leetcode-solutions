@@ -24,6 +24,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 138 | Linked List | Copy list with random pointer | [python](138_CopyListWithRandomPointer.py) | [explanation](138_CopyListWithRandomPointer_wb.txt)|
 | 139 | DP/Memoize| Word break | [python](139_WordBreak.py) | [explanation](139_WordBreak_wb.txt)|
 | 141 | Linked List | Linked list cycle | [python](141_LinkedListCycle.py) | [explanation](141_LinkedListCycle_wb.txt)|
+| 167 | Two Pointers  | Two sum II  | [python](167_TwoSumII.py)| [explanation](167_TwoSumII_wb.txt)|
 | 231 | BitManipulation | Power of two | [python](231_PowerOfTwo.py) | [explanation](231_PowerOfTwo_wb.pdf)|
 | 322 | DP/Memoize | Coin Change | [python](322_CoinChange.py) | [explanation](322_CoinChange_wb.txt)|
 | 399 | BFS |  Evaluate division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
@@ -31,10 +32,10 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 516 | DP/Memoize | Longest palindromic subsequence | [python](516_LongestPalindromicSubsequence.py) | [explanation](516_LongestPalindromicSubsequence_wb.txt) 
 | 518 | DP/Memoize | Coin change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
 | 632 | Heap, Sliding Window | Smallest range covering rlements from K lists | [python](632_SmallestRangeCoveringElementsFromKLists.py) | [explanation](632_SmallestRangeCoveringElementsFromKLists_wb.txt) |
-| 809 | Two pointers | Expressive words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
+| 809 | Two Pointers | Expressive words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
 | 856 | Stack | Score of parantheses  | [python](856_ScoreOfParantheses.py) | [explanation](856_ScoreOfParantheses_wb.txt) |
 | 871 | Greedy, Heap/DP | Minimum number of refuelling stops | [python](871_MinimumNumberOfRefuellingStops.py) | [explanation](871_MinimumNumberOfRefuellingStops_wb.txt) |
-| 973 | Heaps | K closest points to origin | [python](973_KClosestPointsToOrigin.py) | [explanation](973_KClosestPointsToOrigin_wb.pdf) |
+| 973 | Heap | K closest points to origin | [python](973_KClosestPointsToOrigin.py) | [explanation](973_KClosestPointsToOrigin_wb.pdf) |
 | 978 | Sliding Window | Longest turbulent subarray | [python](978_LongestTurbulentSubarray.py)| [TODO](978_LongestTurbulentSubarray_wb.pdf)|
 | 1047 | Stack | Remove all adjacent duplicates | [python](1047_RemoveAllAdjacentDuplicates.py) | [explanation](1047_RemoveAllAdjacentDuplicates_wb.txt)|
 | 1091 | BFS | Shortest path in binary matrix | [TODO](1091_ShortestPathInBinaryMatrix)| [explanation](1091_ShortestPathInBinaryMatrix_wb.txt)|

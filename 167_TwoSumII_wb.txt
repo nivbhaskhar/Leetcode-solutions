@@ -1,0 +1,21 @@
+167. Two Sum II
+
+Problem:
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+
+Idea: 
+want to find x, y so that nums[x]+nums[y] == target and x!=y
+
+you are also given array is sorted
+
+start with 2 pointers, start at 0 and end at the end of nums
+
+check if nums[start] + nums[end] == target
+if sum is > target, move the end pointer to the left
+if sum is < target, move the start pointer to the right
+if sum is = target, return [start, end]
+
+
+complexity:
+
+time: linear 

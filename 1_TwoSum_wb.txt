@@ -1,7 +1,7 @@
 1. Two Sum
 
 Problem:
-#https://leetcode.com/problems/two-sum/
+https://leetcode.com/problems/two-sum/
 
 Idea: 
 want to find x, y so that nums[x]+nums[y] == target and x!=y
