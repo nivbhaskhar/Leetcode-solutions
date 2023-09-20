@@ -1,0 +1,14 @@
+14. Longest Common Prefix
+
+Problem:
+https://leetcode.com/problems/longest-common-prefix/description/
+
+
+Idea:
+Scan through each character simultaneously for all strings
+If common, add to prefix
+If a string ends/find differing characters, return prefix
+
+
+
+
