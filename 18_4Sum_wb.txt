@@ -5,14 +5,22 @@ https://leetcode.com/problems/4sum/description/
 
 Idea:
 
+k = 4
 
-x == t-current
-l
+pick k-2 indices and sum the numbers at their values = s
+solve for finding 2 numbers that sum to target - s in the subarray after the k-2 indices
 
+edge case: unique quadruples are needed, I just used a set to delete the non-unique answers..
 
-x for x in l
+edge case : what if for a given k-2 indices, there are more than 1 (a,b) which completes the solution.. -> we need to include ALL solutions
 
-t-x for x in l
+Complexity
+
+two-sum - O(n)
+O(n^k-2) k-2. tuples
+
+so O(n^k-1)
+
 
 
 
