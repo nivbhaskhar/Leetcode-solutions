@@ -1,0 +1,22 @@
+2859. Sum of Values at Indices With K Set Bits
+
+Problem:
+https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/description/
+
+Idea:
+counting 1s in bit rep
+
+get least significant bit for a number --- n & 1
+set n = n without its least significant bit
+
+n = n >> 1
+
+same as n >>= 1
+
+---
+
+Apparently Python 3.10 and above has inbuilt method for integers
+
+x.bit_count() which efficiently counts the number of 1s in bin rep
+
+in python 3.9 and below, you need to do bin(x).count('1') or something which is less efficient

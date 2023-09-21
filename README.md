@@ -25,7 +25,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 139 | DP/Memoize| Word break | [python](139_WordBreak.py) | [explanation](139_WordBreak_wb.txt)|
 | 141 | Linked List | Linked list cycle | [python](141_LinkedListCycle.py) | [explanation](141_LinkedListCycle_wb.txt)|
 | 167 | Two Pointers  | Two sum II  | [python](167_TwoSumII.py)| [explanation](167_TwoSumII_wb.txt)|
-| 231 | BitManipulation | Power of two | [python](231_PowerOfTwo.py) | [explanation](231_PowerOfTwo_wb.pdf)|
+| 231 | Bit Manipulation | Power of two | [python](231_PowerOfTwo.py) | [explanation](231_PowerOfTwo_wb.pdf)|
 | 322 | DP/Memoize | Coin Change | [python](322_CoinChange.py) | [explanation](322_CoinChange_wb.txt)|
 | 399 | BFS |  Evaluate division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
 | 406 | Sorting | Queue reconstruction by height | [python](406_QueueReconstructionByHeight.py) | [explanation](406_QueueReconstructionByHeight_wb.pdf) |
@@ -45,3 +45,4 @@ Solutions with code and explanations to leetcode problems I have worked on
 |2815 | Array | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
 |2843 | Array | Count symmetric integers | [python](2843_CountSymmetricIntegers.py) | [explanation](2843_CountSymmetricIntegers_wb.txt)|
 |2845 | Misc | Count  of interesting sub arrays | [python](2845_CountOfInterestingSubArrays.py) | [explanation](2845_CountOfInterestingSubArrays_wb.txt)|
+|2859 | Bit Manipulation | Sum of values at indices with K set bits| [python](2859_SumOfValuesAtIndicesWithKSetBits.py) | [explanation](2859_SumOfValuesAtIndicesWithKSetBits_wb.txt)|
