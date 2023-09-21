@@ -46,3 +46,4 @@ Solutions with code and explanations to leetcode problems I have worked on
 |2843 | Array | Count symmetric integers | [python](2843_CountSymmetricIntegers.py) | [explanation](2843_CountSymmetricIntegers_wb.txt)|
 |2845 | Misc | Count  of interesting sub arrays | [python](2845_CountOfInterestingSubArrays.py) | [explanation](2845_CountOfInterestingSubArrays_wb.txt)|
 |2859 | Bit Manipulation | Sum of values at indices with K set bits| [python](2859_SumOfValuesAtIndicesWithKSetBits.py) | [explanation](2859_SumOfValuesAtIndicesWithKSetBits_wb.txt)|
+|2860 | Queue, Stack, Sorting | Happy students | [python](2860_HappyStudents.py) | [explanation](2860_HappyStudents_wb.txt)|

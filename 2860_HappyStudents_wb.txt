@@ -1,0 +1,75 @@
+2860. Happy Students
+
+Problem:
+https://leetcode.com/problems/happy-students/description/
+
+Idea:
+given nums, list of N elements, need to solve for
+
+x_i = 0/1 for 0<= i <= N-1  (x_i = 1 means student picked and 0 if not)
+
+the constraint is that
+
+x_i = 0 <=> nums[i] - \sum x_j > 0
+x_i = 1 <=> nums[i] - \sum x_j < 0 <=> \sum x_j - nums[i] > 0
+
+
+
+this can be clubbed together as
+
+(1-x_i)(nums[i] - \sum x_j) + x_i(\sum x_j - nums[i]) > 0
+
+i.e. (2x_i-1)(\sum x_j - nums[i]) > 0 for each i
+
+
+
+
+if we decide that \sum x_j = A for some fixed A <= N
+
+this shows that if at all we can solve for x_i, it is fixed what each x_i can be
+
+If A > nums[i] --> x_i has to be 1
+If A < nums[i] --> x_i has to be 0
+If A = nums[i] for any i, we cannot solve it!
+
+And finally # {i | A > nums[i]} == A --> we have a solution, else we don't if we have to pick A students.
+
+
+So this reduces to the following:
+
+num_solutions = 0
+
+For each 0<=A<=N:
+
+	if nums[i] == A for any i, reject A
+	otherwise compute x = #{i | A > nums[i]} 
+	if x == A:
+		num_solutions +=1
+
+We can easily do this in O(N^2) time by solving this separately for each A, however we can do better.
+
+The idea is that if A > nums[i], then A > nums[j] if nums[j] <= nums[i]
+So let's sort nums in ascending order --> make it a queue with smallest number on the top
+
+
+
+
+
+
+iterate A from 0 to N
+
+For current A, pop elements from the stack till top of stack > A
+	check the smallest number on the top of the stack.
+	If it's < A, pop and put it into a new stack and continue
+	If it's = A, also put it into the new stack, but make a note to reject A
+
+If A is not to be rejected right off the bat, check how many elems there in new stack --> that is x = # {i | A > nums[i]}
+
+if x == A, num solutions incremented by 1, else reject A
+
+continue..
+
+sorting takes O(Nlog N) time, and the processing takes O(N) time with O(N) storage.
+So overall complexity is O(NlogN) where N = len(nums)
+
+
