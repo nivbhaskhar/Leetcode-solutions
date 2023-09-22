@@ -1,0 +1,119 @@
+2861. Maximum Number of Alloys
+
+Problem:
+https://leetcode.com/problems/maximum-number-of-alloys/description/
+
+Idea:
+
+Fix a machine i: what is the max N alloys we can make from this--
+
+making N alloys:
+
+new material required for j-th metal for machine i = new_ij  = max(N*composition_ij - stock_j, 0) for each j
+
+\sum_j cost_j*(new_ij) <= budget 
+
+if we define cost(i, N) = cost of manufacturing N units of alloy from machine i,
+
+then cost(i,N) = \sum_j cost_j*(max(N*composition_ij - stock_j, 0))
+
+cost(i,N) is monotonic increasing in N 
+
+binary search to find best possible N_i for each i for which cost(i, N_i) <= budget
+
+choose the max among them
+
+
+----
+
+another option is to do it simulatenously for all machines.
+
+i.e. cost(N) = [a vector made of cost(i,N)]
+
+and even if 1 position here is within budget, then N works.
+
+so works(N)  = (any of cost(i,N) < budget) -- is True till a certain point and then false
+
+so binary search for the right N
+
+------
+Linear programming approach
+
+Need to solve for valid N for \sum_j cost_j*(max(N*composition_ij - stock_j, 0)) <= budget
+
+if N*composition_j >= stock_j for all j, then 
+
+
+\sum cost_j*(N composition_j - stock_j) <= budget 
+
+\sum N[composition_j*cost_j] - stock_j*cost_j <= budget
+
+N(\sum composition_j*cost_j) <= budget + \sum stock_j*cost_j
+
+N <= [budget + \sum stock_j*cost_j]/[\sum composition_j*cost_j]
+
+
+N= floor of [budget + \sum stock_j*cost_j]/[\sum composition_j*cost_j]
+
+
+
+to decide which machine i to use, need to compute N(i) for each i
+
+numerator is common -- budget + \sum stock_j*cost_j
+
+
+so to maximize N, choose i so that \sum_j composition_ij*cost_ij is minimum
+
+
+
+complexity : K machines, and n metals
+
+need to compute a dot product of composition_i vector and cost_i vector [vectors are length n] for all i<= k and pick min
+
+so O(nk) 
+
+----
+
+But what happens if N*composition_j < stock_j for some j etc...
+
+Treat the cost function cost(i,N) in n pieces..
+* 0 < N <= Q_1, Q_1 < N < Q_2, ...., Q_n < N
+where Q_i are determined by how many alloys you can make by just using the stock for one metal
+
+Here's a worked out example for n = 3
+
+
+(x_1, x_2, x_3) -- composition
+(q_1, q_2, q_3) -- stock of the things
+(c_1, c_2, c_3) -- cost of buying
+
+(q_1/x_1, q_2/x_2, q_3/x_3) --  this helps determine which stock will get used up first
+
+wlog q_1/x_1 <= q_2/x_2 <= q_3/x_3
+
+money used to make z <= q_1/x_1 units of alloy = 0
+
+
+money used to make q_2/x_2 units of alloy
+= ((q_2/x_2)-q_1/x_1) * x_1 * c_1    ... (1)
+
+money used to make q_1/x_1 < z <= q_2/x_2 units of alloy 
+= z x_1 c_1 - q_1 c_1 
+
+
+money used to make q_2/x_2 <= z<= q_3/x_3 units of alloy
+= z x_1 c_1 - q_1 c_1 + z x_2 c_2 - q_2 c_2
+
+
+money used to make z > q_3/x_3 units of alloy
+= z x_1 c_1 - q_1 c_1 + z x_2 c_2 - q_2 c_2 + z x_3 c_3 - q_3 c_3
+
+so 
+cost(i, N) = piece wise linear function defined on z<=q_1/x_1, q_1/x_1 < z <= q_2/x_2, ...
+
+for each piece, find max z which stays within budget by solving the linear equation = budget
+and taking floor of the solution z.
+
+the soluton has the shape of  budget + \sum stock_j*cost_j/[\sum composition_j*cost_j]
+for each piece, the only thing that differs from piece to piece is how many metals j are there in the summation...
+
