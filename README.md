@@ -16,6 +16,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 22 | Recursion/Backtracking | Generate parantheses | [python](22_GenerateParantheses.py) | [explanation](22_GenerateParantheses_wb.txt) |
 | 33 | Binary Search | Search in rotated sorted array | [python](33_SearchInRotatedSortedArray.py) | [explanation](33_SearchInRotatedSortedArray_wb.txt) |
 | 34 | Binary Search  | Find first last position in sorted array | [python](34_FindFirstLastPositionInSortedArray.py) | [explanation](34_FindFirstLastPositionInSortedArray_wb.txt) |
+| 38 | String  |Count and say | [python](38_CountAndSay.py) | [explanation](38_CountAndSay_wb.txt) |
 | 60 | Misc | Permutation sequence | [python](60_PermutationSequence.py) | [explanation](60_PermutationSequence_wb.txt)  |
 | 75 | Sorting | Sort colours | [python](75_SortColours.py) | [explanation](75_SortColours_wb.pdf) |
 | 78 | Recursion/Backtracking | Subsets | [python](78_Subsets.py) | [explanation](78_Subsets_wb.txt) |

@@ -1,0 +1,53 @@
+38. Count and Say
+
+Problem:
+https://leetcode.com/problems/count-and-say/description/
+
+Idea:
+write a function which takes a list of digits and gives the list of digits as you'd say it
+
+ef f([2,1]) = [1,2,1,1]
+
+
+invoke f appropriately n-1 times
+
+(remember no need to invoke it for n=1, you have to return "1") 
+
+so for n=3, f once --> gives ans for n=2, f twice --> gives ans for n=3
+
+
+
+
+to write f, scan through string and keep track of digit count, when you see a new digit, insert prev digit count and prev digit, and update the prev digit to current digit and reset count = 1
+
+at the end, you have to separately insert the final digit and count ...
+
+
+
+Complexity:
+
+f is linear in digits length
+
+
+each time, the digits 
+
+21
+1211
+111221
+312211
+13112221
+1113213211
+
+
+idea is len(f ([...] + [...])) can't be larger than len(f[..]) + len (f[...])
+
+and you track what happens to a single digit over 3 iterations and it becomes at most 4 digits..
+
+
+so 4^(n/3) or rather 4^(n-1/3) is an upper bound for length of list at n-th stage
+
+complexity is sum 4^(i/3) for i in [1,..n-1] = O(4^{n-1/3})
+
+
+
+
