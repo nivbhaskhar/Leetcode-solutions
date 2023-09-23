@@ -1,0 +1,71 @@
+719. Find K-th Smallest Pair Distance
+
+Problem:
+https://leetcode.com/problems/find-k-th-smallest-pair-distance/description/
+
+Idea:
+
+initial :
+
+maintain a min heap of negative of abs distances seen so far
+keep adding pairwise distance to heap
+if heap exceeds size k, pop element --- (need to insert - abs distance so that popping actually removes the larger distances..)
+
+if you have a heap of size k, return its head
+
+
+this solution times out, since there are n ~ 10^4, k can be ~n^2 as well numbers in the list, so O(n^2 * log k) ~ O(n^2 log n) in worst case..
+
+
+second attempt:
+
+suppose you sort the array
+1,1,4,5,12,...
+
+
+you only need to look at k nearest nbhrs of each element
+
+this also times out .. since k in worst case can be n^2, not much improvement
+
+
+solution:
+
+sort array
+
+Define f(v) = # {(i,j) | i < j and nums[j]-nums[i]<= v}
+
+if f(v) >= k, then v is a possible candidate for being the k-th min distance
+
+
+if we find a v with f(v) = k , then v is the ans
+
+what is the property of f ? if v >= v', then by def f(v) >= f(v'), so it's non-decreasing function and we can do binary search
+
+max v = max(nums)-min(nums)
+min v = 0
+
+only question is how to compute f(v) efficiently ?
+
+if left-----right window has this property that diff of its end point <= v, then so does any left' > left ...
+
+for a fixed v, move the right pointer over the array
+for each right, move left till right-left < v, then you know that any i in left,... right-1 will be a candidate left end point contributing to f(v)
+
+the thing to note is that if left-right is invalid for  v, i.e nums[right]-nums[left]>v, if you move right to right +1, no left'<= left will ever be a candidate point
+
+so you only need to move the left pointer ahead
+
+i.e. sliding window works.. and you can do it in O(N) time where N = len(nums)
+
+so you can compute f(v) in O(N) time for a given v
+since binary searching, you only need to evaluate log X times where X is max difference..
+
+so O(N log X) + O(N log N) --> for the initial sorting
+
+whew, very clever indeed
+
+
+
+
+
+
