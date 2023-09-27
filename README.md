@@ -23,6 +23,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 79 | Recursion/Backtracking | Word search | [python](79_WordSearch.py) | [explanation](79_WordSearch_wb.txt) |
 | 88 | Merge Sort | Merge Sorted Array | [python](88_MergeSortedArray.py) | [explanation](88_MergeSortedArray_wb.txt) | 
 | 102 | BFS | Binary tree level order traversal | [python](102_BinaryTreeLevelOrderTraversal.py) | [explanation](102_BinaryTreeLevelOrderTraversal_wb.txt)|
+| 120 | DP | Triangle | [python](120_Triangle.py) | [explanation](120_Triangle_wb.txt)|
 | 138 | Linked List | Copy list with random pointer | [python](138_CopyListWithRandomPointer.py) | [explanation](138_CopyListWithRandomPointer_wb.txt)|
 | 139 | DP/Memoize| Word break | [python](139_WordBreak.py) | [explanation](139_WordBreak_wb.txt)|
 | 141 | Linked List | Linked list cycle | [python](141_LinkedListCycle.py) | [explanation](141_LinkedListCycle_wb.txt)|

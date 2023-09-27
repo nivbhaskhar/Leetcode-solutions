@@ -1,0 +1,42 @@
+120. Triangle
+
+Problem:
+https://leetcode.com/problems/triangle/description
+
+Idea:
+
+f(row, col) = min path sum ending at [r,c] = arr[r,c] + min[f(row-1,col), f(row-1, col-1)]
+
+f(0,0) = arr[0,0]
+
+f(<0, *) = 0
+
+f(*, <0) = 0
+
+
+        c-1    c
+
+r-1      *     *
+
+r              ??
+
+
+fill each entry for a given r, and fill it from r=0 to r-N-1
+
+
+
+------>
+------>
+
+
+  0  1 2
+0 *
+1 *  *
+2 *  * * 
+
+...
+
+
+only need prev row info.
+
+
