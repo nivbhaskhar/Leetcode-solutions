@@ -1,0 +1,11 @@
+199. Binary Tree Right Side View
+
+Problem:
+https://leetcode.com/problems/binary-tree-right-side-view/description/
+
+
+Idea:
+want to print the last node val for each level
+do bfs
+when you switch levels, print the prev level's last val
+remember to print the final level's value outside the loop
