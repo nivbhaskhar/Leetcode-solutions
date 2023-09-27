@@ -1,0 +1,28 @@
+88. Merge Sorted Array
+
+Problem:
+https://leetcode.com/problems/merge-sorted-array/description
+
+Idea:
+need to merge two sorted arrays in place (in 1st array which has extra space)
+
+
+to do it without extra space
+
+<a b c---> <empty space .....>
+
+<x y z ......>
+
+
+
+start filling largest elements in the empty space
+
+i.e. merge sort from the ends of the list
+
+if you use up a number from the 1t array, make the slot empty
+
+...
+
+
+
+
