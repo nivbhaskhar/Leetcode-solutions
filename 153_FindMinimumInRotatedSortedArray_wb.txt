@@ -1,0 +1,55 @@
+
+153. Find Minimum in Rotated Sorted Array
+
+
+Problem:
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array
+
+
+Idea:
+34512
+
+
+
+inc then dec
+
+M = max
+
+
+...a....a+R...
+
+
+=> M in in [a+R...] or [...a)
+
+
+...a+R .....a... => M is in [a+R, ...a)
+
+
+start ----mid-----end
+
+
+i.e. 
+
+if nums[start] < nums[mid], then M is in [mid, end]
+if nums[start] > nums[mid], then M is in [start, mid]
+
+
+
+binary search
+
+O(log N)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
