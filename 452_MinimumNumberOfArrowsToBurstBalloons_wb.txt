@@ -1,0 +1,54 @@
+452. Minimum Number of Arrows to Burst Balloons
+
+
+Problem:
+https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description
+
+
+Idea:
+
+sort by starting point of intervals
+
+
+[[10,16],[2,8],[1,6],[7,12]]
+
+
+
+
+[1,6],[2,8],[7,12],[10,16]
+
+
+Look at current interval [a,b]
+
+look at next interval [c,d]
+
+if [a,b] not intersection [c,d], then need to shoot [a,b] (so +1), pop it and 
+set current interval = [c,d]
+
+if [a...[c.b]..d] :, i.e d >= b, make the current interval [c,b] and pop both [a,b] and [c,d]
+
+
+if [c,d] is contained inside [a,b]
+
+[a...[c...d]...b]: i.e. d<b, make the current interval [c,d] and pop both [a,b] and [c,d]
+
+..
+
+that is
+if current interval not intersect next interval, +1, pop current interval and set next interval = current interval
+
+if current interval intersects next interval, pop both and insert intersection..
+
+
+
+greedy strategy ?? why does this work ?
+
+
+Complexity
+
+O(n log n) for sorting + O(n) for greedy = O(n log n) where n = number of balloons
+ 
+
+
+   
+            
