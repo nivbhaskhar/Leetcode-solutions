@@ -1,0 +1,18 @@
+211. Design Add and Search Words Data Structure
+
+
+Problem:
+https://leetcode.com/problems/design-add-and-search-words-data-structure
+
+
+Idea:
+Trie data structure
+Search function has a twist -- need to accommodate for special character . --> recurse to match it with any letter
+
+Complexity
+No . word search --> O(|word|)
+
+Word insertion --> O(|word|)
+
+Words with . --> search --> O(|alphabet|^{number of .s} (length of rest of the word))
+
