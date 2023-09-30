@@ -1,0 +1,27 @@
+323. Number of Connected Components in an Undirected Graph
+
+Problem:
+https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
+
+Idea:
+
+Do DFS on each unvisited node --> each time you do a dfs, num components increases by 1
+
+
+Union find algorithm
+start with every node being in its own component
+
+each component always needs a representative, to start with every node is a component and its own rep
+
+as you process each edge, a--b
+
+need to take "union" of component(a), component(b)
+
+this involves:
+
+pick a component at random (say component(a))
+update rep of all nodes of component(b) to rep of component(a)
+
+
+at the end, return number of components
+
