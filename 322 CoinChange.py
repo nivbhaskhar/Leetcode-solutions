@@ -2,7 +2,7 @@
 
 import math
 class Solution:
-    def coinChange(self, coins: List[int], amount: int) -> int:
+    def coinChange(self, coins: list[int], amount: int) -> int:
         min_coins = [math.inf]*(amount+1)
         min_coins[0] = 0
         for a in range(1,amount+1):

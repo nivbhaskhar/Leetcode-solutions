@@ -1,0 +1,22 @@
+311. Sparse Matrix Multiplication
+
+Problem:
+https://leetcode.com/problems/sparse-matrix-multiplication/description/
+
+Idea:
+Have a {row: {col: non_zero_val}} rep of matrix 1
+Have a {col: {row: non_zero_val}} rep of matrix 2
+
+have a dot product implementation given row = {col: val} and col = {row:val}
+
+put it together for matrix multiplication
+
+typically to do (m x n) * (n x k) matrix mult, you need to do mk number of dot products where dot product is over two n-vectors
+
+dot product takes n scalar multiplications + sum of these..
+
+so over all O(mkn) scalar multiplications needed
+
+
+in the sparse rep, we can cut down on needless scalar mult by only multiplying if both entries are non-zero
+
