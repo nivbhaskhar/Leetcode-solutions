@@ -1,0 +1,14 @@
+219. Contains Duplicate II
+
+Problem:
+https://leetcode.com/problems/contains-duplicate-ii/description/
+
+
+Idea:
+Sliding window
+
+|start,end|---> make window till it's size k
+update counter dict of elements seen --> if hit 2 at any point, detect duplicate 
+
+once you reach size k window, move the start pointer up (bug alert : remember to move the end pointer up as well)
+
