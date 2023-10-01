@@ -1,0 +1,13 @@
+351. Android Unlock Patterns
+
+Problem:
+https://leetcode.com/problems/android-unlock-patterns/description/
+
+Idea:
+define an is_valid function given a sequence
+iterate over all possible sequences
+
+
+another option is to extend a valid sequence digit by digit [backtrack/iteratively construct new valid seq from older ones]
+
+

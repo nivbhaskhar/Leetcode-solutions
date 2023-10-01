@@ -35,6 +35,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 311 | Array | Sparse matrix multiplication | [python](311_SparseMatrixMultiplication.py) | [explanation](311_SparseMatrixMultiplication_wb.txt)|
 | 322 | DP/Memoize | Coin Change | [python](322_CoinChange.py) | [explanation](322_CoinChange_wb.txt)|
 | 323 | DFS/Union Find | Number of connected components in an undirected graph| [python](323_NumberOfConnectedComponentsInAnUndirectedGraph.py) | [explanation](323_NumberOfConnectedComponentsInAnUndirectedGraph_wb.txt)|
+| 351 | Backtracking |  Android unlock patterns | [python](351_AndroidUnlockPatterns.py) | [explanation](351_AndroidUnlockPatterns_wb.txt)| 
 | 399 | BFS |  Evaluate division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
 | 406 | Sorting | Queue reconstruction by height | [python](406_QueueReconstructionByHeight.py) | [explanation](406_QueueReconstructionByHeight_wb.pdf) |
 | 452 | Sorting, Greedy | Minimum number of arrows to burst balloons | [python](452_MinimumNumberOfArrowsToBurstBalloons.py) | [explanation](452_MinimumNumberOfArrowsToBurstBalloons_wb.txt) |
