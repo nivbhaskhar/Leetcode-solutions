@@ -30,6 +30,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 153 | Binary Search | Find minimum in rotated sorted array | [python](153_FindMinimumInRotatedSortedArray.py) | [explanation](153_FindMinimumInRotatedSortedArray_wb.txt)|
 | 167 | Two Pointers  | Two sum II  | [python](167_TwoSumII.py)| [explanation](167_TwoSumII_wb.txt)|
 | 199 | BFS | Binary tree right side view | [python](199_BinaryTreeRightSideView.py) | [explanation](199_BinaryTreeRightSideView_wb.txt)|
+| 206 | Linked List | Reverse linked list | [python](206_ReverseLinkedList.py) | [explanation](206_ReverseLinkedList_wb.txt)|
 | 211 | Trie, Recursion | Design add and search words data structure | [python](211_DesignAddAndSearchWordsDataStructure.py) | [explanation](211_DesignAddAndSearchWordsDataStructure_wb.txt)|
 | 219 | Sliding Window | Contains duplicate II | [python](219_ContainsDuplicateII.py) | [explanation](219_ContainsDuplicateII_wb.txt)|
 | 231 | Bit Manipulation | Power of two | [python](231_PowerOfTwo.py) | [explanation](231_PowerOfTwo_wb.pdf)|

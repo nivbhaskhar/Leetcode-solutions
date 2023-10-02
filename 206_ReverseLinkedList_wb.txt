@@ -1,0 +1,32 @@
+206. Reverse Linked List
+
+Problem:
+https://leetcode.com/problems/reverse-linked-list/description/
+
+Idea:
+
+recursive:
+returns the node if it's the end node [N->None]
+else recurses on node's next 
+
+  [N->next-...] ---> [next<-...<-end] (have access to end node due to return of recursive call)
+   adds next->N and N-> None arrow
+
+   returns the end node
+
+
+iterative:
+
+maintain prev node, current node, next node
+
+in loop:
+current node -> prev node
+
+update prev node to current node
+current node to next node
+
+
+continue till current node is not None
+
+return prev node
+
