@@ -1,0 +1,74 @@
+92. Reverse Linked List II
+
+Problem:
+https://leetcode.com/problems/reverse-linked-list-ii
+
+
+Idea:
+
+maintain a left_cut (node before the left end to be reversed)
+left_node (left end where reverse starts)
+right_node (right end where reverse ends)
+right_cut (node right next to right end)
+
+
+eg if list is 
+
+val : 2,5,7,8,9,3,1
+pos : 1,2,3,4,5,6,7
+
+and you need to reverse positions left = 3 and right = 6
+
+
+so need to reverse
+val : 2,5,[7,8,9,3],1
+pos : 1,2,[3,4,5,6],7
+
+left_cut = node with val 5
+left_node = node with val 7
+right_node = node with val 3
+right_cut = node with val 1
+
+
+move across linked list, maintaining a current_node and prev_node
+if between positions left and right, update the current_node to point to prev
+and reset current node to next node and prev_node to current node
+
+[same as iteratively reversing a linked list, and you only need to walk through till you hit the right node]
+
+after this, you'll have
+
+[....->left_cut->left_node->None]
+
+
+[right_node->....->left_node->None]
+
+[right_cut->...>tail]
+
+
+make the left_cut point to right_node
+make the left_node point to right_cut
+
+
+finally, you have to return the head of the list ..
+edge case: if there is no left_cut (i.e you have begun reversing the list from the start, you'll need to return the right node instead)
+
+
+
+
+
+iterative:
+
+maintain prev node, current node, next node
+
+in loop:
+current node -> prev node
+
+update prev node to current node
+current node to next node
+
+
+continue till current node is not None
+
+return prev node
+
