@@ -1,0 +1,41 @@
+980. Unique Paths III
+
+
+Problem:
+https://leetcode.com/problems/unique-paths-iii/description/
+
+Idea:
+
+Hamiltonian path = visit each vertex exactly once
+
+I think this is an NP hard problem
+
+So made me think backtracking (num_vertices factorial -- worst case, though each vertex has degree <=4, so might be much better than n!) is only possible choice
+
+
+the recursive function should take in a current_vertex, history of prev vertices in path, end_vertex and return num of hamiltonian paths that look like
+
+---history of prev vertices--current_vertex-----> end_vertex
+
+
+if we set up the recursive function well, then only need to call the function with current_vertex = start, history = {}, end_vertex = end_vertex
+
+
+
+
+inside the recursion:
+
+add current_vertex into the visited [we'll set up the recursion so that the function is only called on unvisited vertices]
+
+if the current_vertex is the end_vertex and visited covers all vertices in the graph, ---> return 1
+if the current_vertex is not the end_vertex and visited covers all vertices in the graph --> return 0 [found a path not ending at the end vertex]
+if visited is not covering all vertices, 
+
+then compute recursively how many paths look like : ---history--current_vertex--unvisited-nbhr ------> end_vertex  for each unvisited nbhr of current_vertex
+return that
+
+IMPORTANT: (before returning in ALL cases, you have to remove the current_vertex from visited--> crucial to make backtracking work)
+
+
+
+

@@ -51,6 +51,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 871 | Greedy, Heap/DP | Minimum number of refuelling stops | [python](871_MinimumNumberOfRefuellingStops.py) | [explanation](871_MinimumNumberOfRefuellingStops_wb.txt) |
 | 973 | Heap | K closest points to origin | [python](973_KClosestPointsToOrigin.py) | [explanation](973_KClosestPointsToOrigin_wb.pdf) |
 | 978 | Sliding Window | Longest turbulent subarray | [python](978_LongestTurbulentSubarray.py)| [TODO](978_LongestTurbulentSubarray_wb.pdf)|
+| 980 | Backtracking | Unique paths III | [python](980_UniquePathsIII.py)| [TODO](980_UniquePathsIII_wb.txt)|
 | 1047 | Stack | Remove all adjacent duplicates | [python](1047_RemoveAllAdjacentDuplicates.py) | [explanation](1047_RemoveAllAdjacentDuplicates_wb.txt)|
 | 1091 | BFS | Shortest path in binary matrix | [TODO](1091_ShortestPathInBinaryMatrix)| [explanation](1091_ShortestPathInBinaryMatrix_wb.txt)|
 | 1306 | BFS/DFS | Jump Game III | [python](1306_JumpGameIII.py)| [explanation](1306_JumpGameIII_wb.txt)|
