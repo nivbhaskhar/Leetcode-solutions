@@ -1,0 +1,17 @@
+2302. Count Subarrays With Score Less Than K
+
+Problem:
+https://leetcode.com/problems/count-subarrays-with-score-less-than-k/description/
+
+
+Sliding Window
+
+start ----end 
+
+keep expanding window (by moving end pointer) as long as score < k
+once score >= k, move the start pointer up
+
+for every valid window [start, end], all [start+i,end] --> valid as well
+so increase count by end-start+1 once you have a valid [start,end] window
+
+score can be efficiently computed by keeping track of sum of window, len of window

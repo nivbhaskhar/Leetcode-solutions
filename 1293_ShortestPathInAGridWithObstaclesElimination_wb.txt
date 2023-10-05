@@ -1,0 +1,33 @@
+1293. Shortest Path in a Grid with Obstacles Elimination
+
+Problem:
+https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/
+
+Idea:
+If there is no obstacle elimination, it's a BFS from start vertex to end vertex [level of a vertex = number of steps from start to the vertex]
+
+The trick to manage obstacle elimination is to have vertices to be (x,y, number of obstacles you can eliminate still)
+
+so (x,y,3) --> means you are at position (x,y) and can kill 3 more obstacles.
+
+So 
+    
+   y y+1  
+x  0 *
+
+
+even if there is an obstacle next to (x,y) at (x,y+1), 
+
+you have a move/edge from 
+(x,y,3) ---> (x,y+1,2)
+
+where 3 becomes 2 [since you have killed 1 obstacle more]
+
+
+
+So vertices are (x,y,i) where i could be anything between 0 and k included.
+
+Do BFS with start vertex (0,0,k)
+And if you hit (m-1,n-1,i) for any i for the first time, the level of that vertex = min number of steps!
+
+

@@ -54,9 +54,11 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 980 | Backtracking | Unique paths III | [python](980_UniquePathsIII.py)| [TODO](980_UniquePathsIII_wb.txt)|
 | 1047 | Stack | Remove all adjacent duplicates | [python](1047_RemoveAllAdjacentDuplicates.py) | [explanation](1047_RemoveAllAdjacentDuplicates_wb.txt)|
 | 1091 | BFS | Shortest path in binary matrix | [TODO](1091_ShortestPathInBinaryMatrix)| [explanation](1091_ShortestPathInBinaryMatrix_wb.txt)|
+| 1293 | BFS | Shortest path in a grid with obstacles elimination | [python](1293_ShortestPathInAGridWithObstaclesElimination.py)| [explanation](1293_ShortestPathInAGridWithObstaclesElimination_wb.txt)|
 | 1306 | BFS/DFS | Jump Game III | [python](1306_JumpGameIII.py)| [explanation](1306_JumpGameIII_wb.txt)|
 |1162 | BFS | As far from land as possible | [python](1162_FarFromLand.py) | [TODO](1162_FarFromLand_wb.pdf)|
 |2002 | Enumerative/DP | Max product of length of two palindromic subsequences | [python](2002_MaxProductOfLengthOfTwoPalindromicSubsequences.py) | [explanation](2002_MaxProductOfLengthOfTwoPalindromicSubsequences_wb.txt)|
+|2302 | Sliding Window | Count subarrays with score less than k | [python](2302_CountSubarraysWithScoreLessThanK.py) | [explanation](2302_CountSubarraysWithScoreLessThanK_wb.txt)|
 |2815 | Array | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
 |2843 | Array | Count symmetric integers | [python](2843_CountSymmetricIntegers.py) | [explanation](2843_CountSymmetricIntegers_wb.txt)|
 |2845 | Misc | Count  of interesting sub arrays | [python](2845_CountOfInterestingSubArrays.py) | [explanation](2845_CountOfInterestingSubArrays_wb.txt)|
