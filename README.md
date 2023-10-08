@@ -18,6 +18,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 34 | Binary Search  | Find first last position in sorted array | [python](34_FindFirstLastPositionInSortedArray.py) | [explanation](34_FindFirstLastPositionInSortedArray_wb.txt) |
 | 38 | String  |Count and say | [python](38_CountAndSay.py) | [explanation](38_CountAndSay_wb.txt) |
 | 60 | Misc | Permutation sequence | [python](60_PermutationSequence.py) | [explanation](60_PermutationSequence_wb.txt)  |
+| 71 | Stack | Simplify path | [python](71_SimplifyPath.py) | [explanation](71_SimplifyPath_wb.txt) |
 | 75 | Sorting | Sort colours | [python](75_SortColours.py) | [explanation](75_SortColours_wb.pdf) |
 | 78 | Recursion/Backtracking | Subsets | [python](78_Subsets.py) | [explanation](78_Subsets_wb.txt) |
 | 79 | Recursion/Backtracking | Word search | [python](79_WordSearch.py) | [explanation](79_WordSearch_wb.txt) |
@@ -51,7 +52,8 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 871 | Greedy, Heap/DP | Minimum number of refuelling stops | [python](871_MinimumNumberOfRefuellingStops.py) | [explanation](871_MinimumNumberOfRefuellingStops_wb.txt) |
 | 973 | Heap | K closest points to origin | [python](973_KClosestPointsToOrigin.py) | [explanation](973_KClosestPointsToOrigin_wb.pdf) |
 | 978 | Sliding Window | Longest turbulent subarray | [python](978_LongestTurbulentSubarray.py)| [TODO](978_LongestTurbulentSubarray_wb.pdf)|
-| 980 | Backtracking | Unique paths III | [python](980_UniquePathsIII.py)| [TODO](980_UniquePathsIII_wb.txt)|
+| 980 | Backtracking | Unique paths III | [python](980_UniquePathsIII.py)| [explanation](980_UniquePathsIII_wb.txt)|
+| 981 | Binary Search, Dictionary |  Time based key value store | [python](981_TimeBasedKeyValueStore.py)| [explanation](981_TimeBasedKeyValueStore_wb.txt)|
 | 1047 | Stack | Remove all adjacent duplicates | [python](1047_RemoveAllAdjacentDuplicates.py) | [explanation](1047_RemoveAllAdjacentDuplicates_wb.txt)|
 | 1091 | BFS | Shortest path in binary matrix | [TODO](1091_ShortestPathInBinaryMatrix)| [explanation](1091_ShortestPathInBinaryMatrix_wb.txt)|
 | 1293 | BFS | Shortest path in a grid with obstacles elimination | [python](1293_ShortestPathInAGridWithObstaclesElimination.py)| [explanation](1293_ShortestPathInAGridWithObstaclesElimination_wb.txt)|

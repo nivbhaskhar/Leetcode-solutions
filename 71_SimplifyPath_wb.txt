@@ -1,0 +1,49 @@
+71. Simplify path
+
+Problem:
+https://leetcode.com/problems/simplify-path/description
+
+Idea:
+
+add a "/" at the end if it doesn't end with that already. this will ensure that you are processing the last term as well..
+
+
+keep a processing stack
+as you process character by character add it to the stack if not a "/"
+if a "/", process the stack and add a term to a list of path components
+
+
+eg:
+ if "/home/foo/bar/./.."
+
+
+components = []
+processing stack = []
+
+then 
+components = []
+processing stack = ['h', 'o', 'm', 'e']
+
+when you see the next "/", you'll process the stack and add "home" to components
+
+
+components = ["home"]
+processing stack = []
+
+and so on
+
+the special cases are
+
+if processing stack is empty or just has "." between / and / --> do nothing
+if processing stack has ".." between / and / --> remove the last component if it exists
+
+finally, you'll be left with a list of components ["home", "foo"]
+
+make it into a path by joining with "/" (i.e "/".join(["home", "foo"))
+
+remember to add an extra "/" at the stop 
+
+complexity 
+O(n) where n= length of path 
+storage space = O(n) as well
+

@@ -1,0 +1,33 @@
+981. Time Based Key-Value Store 
+
+Problem:
+https://leetcode.com/problems/time-based-key-value-store/description/
+
+Idea:
+timestamps are increasing --> so binary search for timestamps for a given key
+
+
+store as dict {key : [list of (timestamp, values)]
+
+
+Complexity
+
+P put operations
+G get operations
+
+
+L = max(key lengths)
+
+
+1 put operation : O(L) for hashing
+
+all put operations : so O(LP)
+
+1 get operation: O(L) for hashing,  binary search O(log P) so O(L log P)
+all get operations = O(G L log P)
+
+total = O(LP) + O(GL log P)
+
+
+
+O(
