@@ -1,0 +1,48 @@
+721. Accounts Merge
+
+Problem:
+https://leetcode.com/problems/accounts-merge/description/
+
+Idea:
+
+
+node
+
+pos:
+name: 
+accounts = set()
+
+email : [list of positions in which it occurs..., i.e. all these nodes have an edge to each other]
+
+
+run dfs 
+
+
+[connected components]-> [1,2,3,...]
+
+
+merge of the component
+
+
+can do union find, but seems more involved
+
+
+one tip :
+
+the graph is set up as a cluster of complete subgraphs
+this is not neeeded, if all we want to to is merge connected components
+
+so instead of i-j for all [i, j in set of vertices]
+
+do vertex0 -- i for all other i in set of vertices
+
+i.e.
+
+
+star shaped subgraph where 1 vertex connected to all other vertices by edge
+
+
+
+
+
+
