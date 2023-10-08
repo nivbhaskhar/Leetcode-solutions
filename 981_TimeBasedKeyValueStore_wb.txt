@@ -29,5 +29,3 @@ all get operations = O(G L log P)
 total = O(LP) + O(GL log P)
 
 
-
-O(
