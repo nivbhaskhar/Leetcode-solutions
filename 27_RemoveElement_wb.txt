@@ -1,0 +1,26 @@
+27. Remove Element
+
+Problem:
+https://leetcode.com/problems/remove-element
+
+Idea:
+
+Two pointer solution
+
+current_pos --> 
+
+if val, delete it and update prev_empty_pos if needed
+if not val, if possible move it to prev_empty_pos and update prev_empty_pos 
+
+
+
+
+
+  
+    
+
+   
+
+
+
+

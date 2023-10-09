@@ -14,6 +14,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 18 | Strings  | 4Sum | [python](18_4Sum.py)| [explanation](18_4Sum_wb.txt)|
 |21| Linked List | Merge two sorted lists | [python](21_MergeTwoSortedLists.py)| [explanation](21_MergeTwoSortedLists_wb.txt)|
 | 22 | Recursion/Backtracking | Generate parantheses | [python](22_GenerateParantheses.py) | [explanation](22_GenerateParantheses_wb.txt) |
+| 27 | Two Pointers | Remove element | [python](27_RemoveElement.py) | [explanation](27_RemoveElement_wb.txt) |
 | 33 | Binary Search | Search in rotated sorted array | [python](33_SearchInRotatedSortedArray.py) | [explanation](33_SearchInRotatedSortedArray_wb.txt) |
 | 34 | Binary Search  | Find first last position in sorted array | [python](34_FindFirstLastPositionInSortedArray.py) | [explanation](34_FindFirstLastPositionInSortedArray_wb.txt) |
 | 38 | String  |Count and say | [python](38_CountAndSay.py) | [explanation](38_CountAndSay_wb.txt) |
