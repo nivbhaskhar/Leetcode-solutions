@@ -1,7 +1,48 @@
 #https://leetcode.com/problems/search-in-rotated-sorted-array/
 
 class Solution:
-    def search(self, nums: List[int], target: int) -> int:
+    def search(self, nums: list[int], target: int) -> int:
+        n = len(nums)
+        if n == 0:
+            return -1 
+        start = 0
+        end = n-1
+        while(start < end-1):
+            mid = (start + end)//2
+
+            if nums[start] < nums[mid]:
+                # [start, mid] --> monotonic inc
+                if target >= nums[mid] or target < nums[start]:
+                    start = mid
+                else:
+                    end = mid
+  
+                
+            else:
+                # [start, mid] --> monotonic inc and then cliff and then monotonic inc
+                if target >= nums[start] or target <= nums[mid]:
+                    end = mid
+                else:
+                    start = mid
+
+        if target == nums[start]:
+            return start
+        elif target == nums[end]:
+            return end
+        else:
+            return -1
+
+
+
+
+        # a....b, if a<b --> monotonic
+        # a....b.  if a>b --> go up and reach cliff and start from down
+        # if a < b, and target between a and b, search in [a,b]
+        # if a > b,  a^^^....^^b
+        # target > a -> search in [a,b]
+        # target < b --> search in
+        
+    def old_search(self, nums: list[int], target: int) -> int:
         def rec_search(start,end):
             #print(f"s= {start}, e = {end}")
             if start > end:
