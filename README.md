@@ -10,6 +10,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 1 | Dictionary/Misc  | Two sum  | [python](1_TwoSum.py)| [explanation](1_TwoSum_wb.txt)|
 | 3 | Sliding Window  | Longest substring without repeating characters | [python](3_LongestSubstringWithoutRepeatingCharacters.py)| [explanation](3_LongestSubstringWithoutRepeatingCharacters_wb.txt)|
 | 14 | String  | Longest common prefix | [python](14_LongestCommonPrefix.py)| [explanation](14_LongestCommonPrefix_wb.txt)|
+| 16 | Sort, Two Pointers | 3 sum closest | [python](16_3SumClosest.py)| [explanation](16_3SumClosest_wb.txt)|
 |17| Recursion | Letter combinations of phone numbers| [python](17_LetterCombinationsOfPhoneNumber.py) | [explanation](17_LetterCombinationsOfPhoneNumber_wb.pdf)|
 | 18 | Strings  | 4Sum | [python](18_4Sum.py)| [explanation](18_4Sum_wb.txt)|
 |21| Linked List | Merge two sorted lists | [python](21_MergeTwoSortedLists.py)| [explanation](21_MergeTwoSortedLists_wb.txt)|

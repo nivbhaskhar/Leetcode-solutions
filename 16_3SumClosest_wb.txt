@@ -1,0 +1,37 @@
+16. 3Sum Closest
+
+Problem:
+https://leetcode.com/problems/3sum-closest/
+
+Idea:
+
+given an integer array, and integer target, find 3 ints in nums so that it is closest to target, return sum 
+
+nums : 500
+
+500^3 = 125*10^6 --> brute force O(N^3)
+
+sort nums
+
+to find sum of 2 ints closest to target, 
+  [start end]
+  s = num[start] + num[end], 
+  s>target, move end pointer back
+  s< target, move start ahead
+  keep track of least difference to target
+  linear time 
+
+x+y+z, fix x: find y, z ~ target-x 
+
+can assume (x,y,z) where x<=y<=z, so if using x, only search in nums[pos_x+1:] for y, z
+
+
+complexity
+
+N*N + N log N --> N^2
+
+
+
+
+
+
