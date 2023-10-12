@@ -1,0 +1,63 @@
+213. House Robber II
+
+
+Problem:
+https://leetcode.com/problems/house-robber-ii/description/
+
+
+Idea:
+
+
+   0
+ 3   1
+   2
+
+
+f[i,j] = max in nums[i:j+1]
+
+
+f[i,i] = nums[i]
+f[i,i+1] = max(nums[i], nums[i+1])
+
+f[i,j] = 
+
+pick i -> nums[i] + f(j>=min non nbhr of i > i, i< max non nbhr of i <= j)
+don't pick i --> f(i+1, j)
+
+
+min non nbhr of i in (i, j]: i+2 if i+2 <=j 
+max non nbhr of i in (i, j]: if i!=0, then j, if i=0 and j!=end, then j, else if i==0 and j==end, then j-1 if j-1>i
+
+f[x,y] for x>y ?? think 0
+
+
+
+
+
+final ans = f[0,end]
+
+to compute i, j : need to know i+1,j, i+2,j or i+2,j-1
+
+
+          j-1 j
+
+i             ??
+
+i+1           *
+
+i+2        *  *
+ 
+
+
+fill up col from j=0 to j=end
+for each col, fill from i = end to 0
+
+
+only need i<=j --> so for a given j, fill from i=j to 0...
+
+
+when filling f(*,j), only need f(*, j-1) and current info..
+
+O(n) space complexity
+O(n^2) time
+
