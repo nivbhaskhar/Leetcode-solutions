@@ -1,0 +1,75 @@
+41. First Missing Positive
+
+Problem:
+https://leetcode.com/problems/first-missing-positive/description/
+
+Idea:
+if array is of size N, then first missing positive should be between [1,N+1]
+
+idea: if you see i in [1,N], put arr[i-1] = negative noting you have seen it
+
+that way, when you scan the array again, the first index j whose value is not negative --> j+1 is the missing positive
+
+and if all values are negative in the second scan, missing positive = N+1
+
+
+some pre-processing
+--------------------
+
+in the first scan, what if you see a value j where j<=0 or j >= N+1 --> can be ignored, so we'll set it to 0
+
+how to do the update so that you don't rewrite existing values which are needed
+-------------------------------------------------------------------------------
+go from left to right
+
+arr[i]  = v
+
+  i v
+  v i
+
+
+(i,v), (v,i) --> till you hit a value whose position you have seen earlier
+
+
+
+
+ j  i  v  k
+ k  v  j  -1
+
+(i,v), (v,j), (j,k), (k,-1) --> till you hit a value <= 0
+
+
+
+
+ j  i  v  k
+ k  v  j  i
+
+(j,k), (k,i),(i,v), (v,j) --> till you hit a value whose position you have seen earlier
+
+
+in all these cases, 
+while val falls in [1,N]:
+
+go to arr[val-1]:
+
+update val = arr[val-1]
+update arr[val-1] < 0
+
+else:
+exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
