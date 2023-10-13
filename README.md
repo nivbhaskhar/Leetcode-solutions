@@ -18,7 +18,8 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 27 | Two Pointers | Remove element | [python](27_RemoveElement.py) | [explanation](27_RemoveElement_wb.txt) |
 | 33 | Binary Search | Search in rotated sorted array | [python](33_SearchInRotatedSortedArray.py) | [explanation](33_SearchInRotatedSortedArray_wb.txt) |
 | 34 | Binary Search  | Find first last position in sorted array | [python](34_FindFirstLastPositionInSortedArray.py) | [explanation](34_FindFirstLastPositionInSortedArray_wb.txt) |
-| 38 | String  |Count and say | [python](38_CountAndSay.py) | [explanation](38_CountAndSay_wb.txt) |
+| 38 | String | Count and say | [python](38_CountAndSay.py) | [explanation](38_CountAndSay_wb.txt) |
+| 41 | Array  | First missing positive | [python](41_FirstMissingPositive.py) | [explanation](41_FirstMissingPositive_wb.txt) |
 | 60 | Misc | Permutation sequence | [python](60_PermutationSequence.py) | [explanation](60_PermutationSequence_wb.txt)  |
 | 71 | Stack | Simplify path | [python](71_SimplifyPath.py) | [explanation](71_SimplifyPath_wb.txt) |
 | 75 | Sorting | Sort colours | [python](75_SortColours.py) | [explanation](75_SortColours_wb.pdf) |
