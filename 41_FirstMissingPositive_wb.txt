@@ -63,6 +63,12 @@ exit
 
 
 
+linear time
+
+basically trying to decompose a permutation into its cycles!!
+
+no extra space
+
 
 
 
