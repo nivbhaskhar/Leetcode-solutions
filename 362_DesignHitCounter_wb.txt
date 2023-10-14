@@ -1,0 +1,54 @@
+362. Design Hit Counter
+
+Problem:
+https://leetcode.com/problems/design-hit-counter/description/
+
+Idea:
+
+Initial:
+
+maintain a dict {time_stamp : num of hits}
+maintain its keys in sorted order
+
+
+for get hits, do binary search to locate current time_stamp, and walk down the array till you cross time_stamp - 300, while summing the array
+
+
+Solution:
+
+Missed that the calls for hits and get hits will come in increasing order 
+
+
+so just maintain a queue of timestamps recording hits -> O(1) insertion
+
+
+1,2,4,4,4,5...
+
+
+when get hit is called at time T, delete all old entries where t < T-300 
+key observation being deleting an old entry of t < T-300 will not affect get hits method for T+i..
+
+
+"removing stale elements"
+
+
+get hits should return size of queue
+
+
+complexity :
+each time stamp is inserted exactly once in 1 hit call
+each time stamp is removed at most once in 1 get hit call
+
+
+
+
+
+
+
+
+
+
+
+
+
+
