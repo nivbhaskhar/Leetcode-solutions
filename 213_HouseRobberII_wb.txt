@@ -61,3 +61,42 @@ when filling f(*,j), only need f(*, j-1) and current info..
 O(n) space complexity
 O(n^2) time
 
+----
+if the circular thing is off, i.e. last is not adjacent to first, can we do better ?
+
+
+f(i) = max for nums[:i]
+f(i) = max(nums[i-1] + f(i-2), f(i-1))
+
+
+f(0) = 0
+f(1) = nums[0]
+f(2) = max(nums[1] + f(0), f(1))
+f(3) = max(nums[2] + f(1), f(2))
+
+....
+
+
+return f(n), n = len(nums)
+
+this is O(n) time complexity and O(1) space complexity
+
+why this was possible is that for computing max in nums[:i], we don't really need to keep track of the end pos of the prev winning sequence..
+
+if prev seq was t1, t2,....tk,...... nums[i-2], nums[i-1]
+
+
+it needs to extend the max sequence in nums[:i-2],
+
+it's OK if max seq in nums[:i-2] is the same as max seq in nums[:i-1] !!
+
+
+
+
+find max for nums[:-1], find max for nums[1:] and take the max ??
+
+
+
+
+
+

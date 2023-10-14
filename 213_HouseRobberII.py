@@ -1,6 +1,32 @@
 #https://leetcode.com/problems/house-robber-ii/
 from typing import Optional
 class Solution:
+    def rob_linear(self, nums: list[int])->int:
+        n = len(nums)
+        if n == 0:
+            return 0
+        elif n == 1:
+            return nums[0]
+        else:
+            prev_prev_sum = 0 # f(0) = max for nums[:0]
+            prev_sum = nums[0] # f(1) = max for nums[:1]
+            for i in range(2, len(nums)+1):
+                # compute f(i) = max for nums[:i] = nums[0,1,...i-1]
+                new_sum = max(prev_prev_sum + nums[i-1], prev_sum) # f(i)
+                prev_prev_sum = prev_sum # update f(i-2) = f(i-1)
+                prev_sum = new_sum # update f(i-1) = f(i)
+            return prev_sum
+
+
+
+
+    def rob(self, nums: list[int]) -> int:
+        if len(nums) == 0:
+            return 0
+        elif len(nums) == 1:
+            return nums[0]
+        return max(self.rob_linear(nums[:-1]),self.rob_linear(nums[1:]))
+
     def get_min_non_nbhr(self, i: int, j: int)->Optional[int]:
         if i+2 <= j:
             return i+2
@@ -20,7 +46,7 @@ class Solution:
     def is_valid_window(self, min_non_nbhr:Optional[int], max_non_nbhr: Optional[int])->bool:
         return (min_non_nbhr and max_non_nbhr and (min_non_nbhr <= max_non_nbhr))
 
-    def rob(self, nums: list[int]) -> int:
+    def rob_inefficient(self, nums: list[int]) -> int:
         n = len(nums)
         current_end = 0
         money_for_prev_end = {} # stores {start: max money in nums[start: prev_end+1] for start <= prev_end}
