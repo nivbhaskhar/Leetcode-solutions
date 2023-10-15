@@ -1,0 +1,76 @@
+751. IP to CIDR
+
+Problem:
+https://leetcode.com/problems/ip-to-cidr/description/
+
+Idea:
+
+Bit involved problem
+
+
+binary start address [32 bits]
+
+binary end address [32 bits]
+
+define a recursive function which given start and end address, adds a block for the current start and moves up start address and invokes itself again
+
+how to get the current block for start
+
+if start == end, it is just a block (start, prefix = 32), exit
+
+if start == end-1
+
+	if start is odd, ends in 1 --> just blocks (start, prefix 32), (end, prefix 32), exit
+
+	if start is even, ends in 0 --> (start, prefix = 31), exit
+otherwise:
+
+.....0......
+.....1......
+
+     p
+
+p = pos of first differing bit of start and end (starting from left end)
+start will have 0 at pos p
+end will have 1 at pos p since start < end
+
+
+also let lsb = least set bit of start, i.e. first 1 from right 
+
+.............100000 
+             lsb
+
+
+if p is to the left of lsb, this means you can safely assume the block to be
+
+start with ***** instead of the 0s before the lsb
+
+i.e you can increment start to start + 2^{num_zeros) and recurse, and add block (start, 32-num_zeros)
+to cover the current start
+
+[note p can never be equal to lsb since start[p] is 0, while start[lsb]=1)
+
+if p is to the right of lsb, this means
+
+start : .......10000000000
+end:    .......10001......
+               lsb
+                   p
+
+
+there are 2 cases:
+end[p:] = 11111111..
+
+in this case, the ***** = 31-p+1 ---> (took me a while to do this ^.^)
+
+end[p:] != 111.....
+
+in this case, the ***** = 31-p
+
+another edge case is if lsb does not exists, i..e start is the 0 sequence --> here just use the p is to the right of lsb case..
+
+whew
+
+
+
+
