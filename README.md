@@ -29,6 +29,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 92 | Linked List | Reverse linked list II | [python](92_ReverseLinkedListII.py) | [explanation](92_ReverseLinkedListII_wb.txt)|
 | 102 | BFS | Binary tree level order traversal | [python](102_BinaryTreeLevelOrderTraversal.py) | [explanation](102_BinaryTreeLevelOrderTraversal_wb.txt)|
 | 120 | DP | Triangle | [python](120_Triangle.py) | [explanation](120_Triangle_wb.txt)|
+| 128 | Dictionary | Longest consecutive sequence | [python](128_LongestConsecutiveSequence.py) | [explanation](128_LongestConsecutiveSequence_wb.txt)|
 | 138 | Linked List | Copy list with random pointer | [python](138_CopyListWithRandomPointer.py) | [explanation](138_CopyListWithRandomPointer_wb.txt)|
 | 139 | DP/Memoize| Word break | [python](139_WordBreak.py) | [explanation](139_WordBreak_wb.txt)|
 | 141 | Linked List | Linked list cycle | [python](141_LinkedListCycle.py) | [explanation](141_LinkedListCycle_wb.txt)|

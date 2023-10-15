@@ -1,0 +1,49 @@
+128. Triangle
+
+Problem:
+https://leetcode.com/problems/longest-consecutive-sequence/description
+
+Idea:
+
+My solution (needlessly roundabout)
+
+Do a solitare kind of partial sequence build up (without duplicates)
+eg: 0,3,7,2,5,8,4,6,0,1
+
+0 3 7 2 5 
+1 4 8   6
+
+store as dictionary {start:end}
+
+{0:1, 3:4, 7:8, 2:2, 5:6}
+
+make a graph with the keys of this dictionary (rep the seq)
+draw an edge between 2 nodes if the corresponding seq can be concatenated
+
+this forms a graph of disconnected paths
+[each connected component is a path]
+
+find the connected components (and find the max and min nodes in each component while bfs/dfs) --> max, min node will recover length of sequence making up the component
+
+output the longest consecutive sequence
+
+
+Simpler solution:
+
+keep a set of the numbers
+for each num in set of nums:
+ check if num-1 is in the set. 
+ if it is, then num will not be the start of longest consecutive subseq, so skip processing it
+ if num-1 is not in set, the candidate seq starts at num
+	check how far you can go by checking if num+i in set of nums
+
+ maintain max of length of longest sequences seen so far
+
+
+Time complexity is linear because:
+
+you only process a number once..
+
+
+
+
