@@ -1,0 +1,30 @@
+2251. Number of Flowers in Full Bloom
+
+Problem:
+https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/
+
+Idea:
+sort people by arrival time
+
+
+sort flowers by start bloom time
+
+
+{intervals with start time < current arrival time}:
+
+pop stuff with end time < current arrival time**
+length of queue --> ans for current arrival time
+
+
+update current arrival time to next one
+[...],[.....],..., 
+
+
+
+need a data structure to store end times and given a time, pop all values < time efficiently
+
+---> heap
+
+
+
+
