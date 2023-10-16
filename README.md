@@ -72,6 +72,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 |2251 | Queue, Heap | Number of flowers in full bloom | [python](2251_NumberOfFlowersInFullBloom.py) | [explanation](2251_NumberOfFlowersInFullBloom_wb.txt)|
 |2302 | Sliding Window | Count subarrays with score less than k | [python](2302_CountSubarraysWithScoreLessThanK.py) | [explanation](2302_CountSubarraysWithScoreLessThanK_wb.txt)|
 |2815 | Array | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
+|2817 |  | Minimum absolute difference between elements with constraint | [TODO](2817_MinimumAbsoluteDifferenceBetweenElementsWithConstraint.py) | [explanation](2817_MinimumAbsoluteDifferenceBetweenElementsWithConstraint_wb.txt)|
 |2843 | Array | Count symmetric integers | [python](2843_CountSymmetricIntegers.py) | [explanation](2843_CountSymmetricIntegers_wb.txt)|
 |2845 | Misc | Count  of interesting sub arrays | [python](2845_CountOfInterestingSubArrays.py) | [explanation](2845_CountOfInterestingSubArrays_wb.txt)|
 |2859 | Bit Manipulation | Sum of values at indices with K set bits| [python](2859_SumOfValuesAtIndicesWithKSetBits.py) | [explanation](2859_SumOfValuesAtIndicesWithKSetBits_wb.txt)|

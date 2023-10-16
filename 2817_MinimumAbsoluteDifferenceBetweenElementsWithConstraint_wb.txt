@@ -1,0 +1,26 @@
+2817. Minimum Absolute Difference Between Elements With Constraint
+
+
+Problem : 
+https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/description/
+
+
+Idea : 
+
+data structure :
+
+easily find a number to left and right of a given number --> log(n)
+
+can easily insert elements -> log(n)
+
+
+
+balanced binary search tree --- for each node, all elements on left are smaller, all elements on right are bigger....
+
+
+
+-- end pointer at x
+
+keep all numbers between 0-end-x in data structure
+if nums[end] = val, search for n1, n2 just to left and right of val in data structure
+keep track of min of abs(val-n1), abs(val-n2) as you iterate end from x to last place of array
