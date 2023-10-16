@@ -1,0 +1,15 @@
+1512. Number of Good Pairs
+
+Problem:
+https://leetcode.com/problems/number-of-good-pairs/description/
+
+Idea:
+
+keep a counter for values
+
+{val: num time seen}
+
+
+if val is seen k times, you can make C(k,2) good pairs from it --> sum them over
+
+O(n) complexity - space and time

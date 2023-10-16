@@ -66,6 +66,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 1091 | BFS | Shortest path in binary matrix | [TODO](1091_ShortestPathInBinaryMatrix)| [explanation](1091_ShortestPathInBinaryMatrix_wb.txt)|
 | 1293 | BFS | Shortest path in a grid with obstacles elimination | [python](1293_ShortestPathInAGridWithObstaclesElimination.py)| [explanation](1293_ShortestPathInAGridWithObstaclesElimination_wb.txt)|
 | 1306 | BFS/DFS | Jump Game III | [python](1306_JumpGameIII.py)| [explanation](1306_JumpGameIII_wb.txt)|
+|1512 | Dictionary | Number of good pairs | [python](1512_NumberOfGoodPairs.py) | [Explanation](1512_NumberOfGoodPairs_wb.txt)|
 |1162 | BFS | As far from land as possible | [python](1162_FarFromLand.py) | [TODO](1162_FarFromLand_wb.pdf)|
 |2002 | Enumerative/DP | Max product of length of two palindromic subsequences | [python](2002_MaxProductOfLengthOfTwoPalindromicSubsequences.py) | [explanation](2002_MaxProductOfLengthOfTwoPalindromicSubsequences_wb.txt)|
 |2251 | Queue, Heap | Number of flowers in full bloom | [python](2251_NumberOfFlowersInFullBloom.py) | [explanation](2251_NumberOfFlowersInFullBloom_wb.txt)|
