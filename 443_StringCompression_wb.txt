@@ -1,0 +1,25 @@
+443. String Compression
+
+
+Problem:
+https://leetcode.com/problems/string-compression/description/
+
+Idea:
+
+Used a queue ..
+
+process the characters of the same kind, and append the compression at the end.
+
+
+However it seemed like creating a queue out of given list created a new copy of the list. The problem wants to modify the list in place
+
+
+Second Idea:
+maintain a pointer (o) to "overwrite_pos", i.e. the place where you can start overwriting
+
+
+process the characters of the same kind -> you are at place x here, and overwrite the list with the compressed version --> (you'll end up at an updated place o here)
+
+keep processing characters starting from x, and keep overwriting from o
+
+O(n) time complexity and O(1) extra space

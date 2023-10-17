@@ -48,6 +48,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 362 | Queue |  Design hit counter | [python](362_DesignHitCounter.py) | [explanation](362_DesignHitCounter_wb.txt)| 
 | 399 | BFS |  Evaluate division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
 | 406 | Sorting | Queue reconstruction by height | [python](406_QueueReconstructionByHeight.py) | [explanation](406_QueueReconstructionByHeight_wb.pdf) |
+| 443 | Two Pointer/Queue| String compression | [python](443_StringCompression.py) | [explanation](443_StringCompression_wb.txt) |
 | 452 | Sorting, Greedy | Minimum number of arrows to burst balloons | [python](452_MinimumNumberOfArrowsToBurstBalloons.py) | [explanation](452_MinimumNumberOfArrowsToBurstBalloons_wb.txt) |
 | 516 | DP/Memoize | Longest palindromic subsequence | [python](516_LongestPalindromicSubsequence.py) | [explanation](516_LongestPalindromicSubsequence_wb.txt) 
 | 518 | DP/Memoize | Coin change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
