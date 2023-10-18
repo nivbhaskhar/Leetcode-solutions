@@ -1,0 +1,13 @@
+642. Design Search Autocomplete System
+
+Problem:
+https://leetcode.com/problems/design-search-autocomplete-system/
+
+
+Idea:
+
+Trie datastructure
+
+at each node : maintain a heap of top-3 sentences of which path to current node is a prefix : frequency
+
+when inserting a sentence, update the heaps of all nodes along the path
