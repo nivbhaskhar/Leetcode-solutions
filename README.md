@@ -71,6 +71,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 |1512 | Dictionary | Number of good pairs | [python](1512_NumberOfGoodPairs.py) | [Explanation](1512_NumberOfGoodPairs_wb.txt)|
 |1162 | BFS | As far from land as possible | [python](1162_FarFromLand.py) | [TODO](1162_FarFromLand_wb.pdf)|
 |2002 | Enumerative/DP | Max product of length of two palindromic subsequences | [python](2002_MaxProductOfLengthOfTwoPalindromicSubsequences.py) | [explanation](2002_MaxProductOfLengthOfTwoPalindromicSubsequences_wb.txt)|
+|2232 | String | Minimize result by adding parantheses to expression | [python](2232_MinimizeResultByAddingParanthesesToExpression.py) | [explanation](2232_MinimizeResultByAddingParanthesesToExpression_wb.txt) |
 |2251 | Queue, Heap | Number of flowers in full bloom | [python](2251_NumberOfFlowersInFullBloom.py) | [explanation](2251_NumberOfFlowersInFullBloom_wb.txt)|
 |2302 | Sliding Window | Count subarrays with score less than k | [python](2302_CountSubarraysWithScoreLessThanK.py) | [explanation](2302_CountSubarraysWithScoreLessThanK_wb.txt)|
 |2815 | Array | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
