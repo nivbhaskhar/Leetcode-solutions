@@ -1,0 +1,23 @@
+5. Longest Palindromic Substring
+
+Problem:
+#https://leetcode.com/problems/longest-palindromic-substring/description/
+
+Idea: 
+
+i <= j
+
+f(i, j) = True if s[i:j+1] palindromic else False
+
+
+f(i, j+1) = (f[i] == f[j+1]) and f(i+1,j) 
+
+upper triangular 
+           j j+1
+i             ?
+i+1        *
+
+f(i,i) = True
+
+0,1,2
+0,1,2,3

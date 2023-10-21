@@ -1,0 +1,14 @@
+2. Add Two Numbers
+
+Problem:
+https://leetcode.com/problems/add-two-numbers/description/
+
+Idea: 
+recursive function
+
+take current node of both lists, + any carry --> add a node with last digit of the sum and link it to the result of (next node of both lists, new carry)
+
+return the current node
+
+
+

@@ -8,7 +8,9 @@ Solutions with code and explanations to leetcode problems I have worked on
 | Number  | Category | Problem name | Code | Whiteboard |
 | :-------------: | :-------------: | :------------: | :-----: | :----------: |
 | 1 | Dictionary/Misc  | Two sum  | [python](1_TwoSum.py)| [explanation](1_TwoSum_wb.txt)|
+| 2 | Linked List, Recursion  | Add two numbers  | [python](2_AddTwoNumbers.py)| [explanation](2_AddTwoNumbers_wb.txt)|
 | 3 | Sliding Window  | Longest substring without repeating characters | [python](3_LongestSubstringWithoutRepeatingCharacters.py)| [explanation](3_LongestSubstringWithoutRepeatingCharacters_wb.txt)|
+| 5 | DP  | Longest palindroming substring | [python](5_LongestPalindromicSubstring.py)| [explanation](5_LongestPalindromicSubstring_wb.txt)|
 | 14 | String  | Longest common prefix | [python](14_LongestCommonPrefix.py)| [explanation](14_LongestCommonPrefix_wb.txt)|
 | 16 | Sort, Two Pointers | 3 sum closest | [python](16_3SumClosest.py)| [explanation](16_3SumClosest_wb.txt)|
 |17| Recursion | Letter combinations of phone numbers| [python](17_LetterCombinationsOfPhoneNumber.py) | [explanation](17_LetterCombinationsOfPhoneNumber_wb.pdf)|
