@@ -1,0 +1,12 @@
+339. Nested List Weight Sum
+
+
+Problem:
+https://leetcode.com/problems/nested-list-weight-sum/
+
+Idea:
+set up as recursive function
+given a current depth + a nested list,
+
+ans = sum(current_depth *integer entries) + sum(recursive ans with current_depth+1 and member nested lists)
+

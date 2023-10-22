@@ -46,6 +46,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 311 | Array | Sparse matrix multiplication | [python](311_SparseMatrixMultiplication.py) | [explanation](311_SparseMatrixMultiplication_wb.txt)|
 | 322 | DP/Memoize | Coin Change | [python](322_CoinChange.py) | [explanation](322_CoinChange_wb.txt)|
 | 323 | DFS/Union Find | Number of connected components in an undirected graph| [python](323_NumberOfConnectedComponentsInAnUndirectedGraph.py) | [explanation](323_NumberOfConnectedComponentsInAnUndirectedGraph_wb.txt)|
+| 339 | Recursion |  Nested list weight sum | [python](339_NestedListWeightSum.py) | [explanation](339_NestedListWeightSum_wb.txt)| 
 | 351 | Backtracking |  Android unlock patterns | [python](351_AndroidUnlockPatterns.py) | [explanation](351_AndroidUnlockPatterns_wb.txt)|
 | 362 | Queue |  Design hit counter | [python](362_DesignHitCounter.py) | [explanation](362_DesignHitCounter_wb.txt)| 
 | 399 | BFS |  Evaluate division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
