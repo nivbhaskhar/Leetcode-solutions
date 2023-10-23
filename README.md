@@ -71,6 +71,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 981 | Binary Search, Dictionary |  Time based key value store | [python](981_TimeBasedKeyValueStore.py)| [explanation](981_TimeBasedKeyValueStore_wb.txt)|
 | 1047 | Stack | Remove all adjacent duplicates | [python](1047_RemoveAllAdjacentDuplicates.py) | [explanation](1047_RemoveAllAdjacentDuplicates_wb.txt)|
 | 1091 | BFS | Shortest path in binary matrix | [TODO](1091_ShortestPathInBinaryMatrix)| [explanation](1091_ShortestPathInBinaryMatrix_wb.txt)|
+| 1249 | Stack | Minimum remove to make valid parentheses | [python](1249_MinimumRemoveToMakeValidParentheses.py)| [explanation](1249_MinimumRemoveToMakeValidParentheses_wb.txt)|
 | 1293 | BFS | Shortest path in a grid with obstacles elimination | [python](1293_ShortestPathInAGridWithObstaclesElimination.py)| [explanation](1293_ShortestPathInAGridWithObstaclesElimination_wb.txt)|
 | 1306 | BFS/DFS | Jump Game III | [python](1306_JumpGameIII.py)| [explanation](1306_JumpGameIII_wb.txt)|
 |1512 | Dictionary | Number of good pairs | [python](1512_NumberOfGoodPairs.py) | [Explanation](1512_NumberOfGoodPairs_wb.txt)|
