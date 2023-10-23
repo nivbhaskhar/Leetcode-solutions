@@ -4,6 +4,19 @@ Problem:
 https://leetcode.com/problems/buildings-with-an-ocean-view/description/
 
 Idea:
+
+
+simpler solution:
+
+a building is not blocked iff it's larger than anything to its right
+go from right to left and keep the max seen so far
+if current building beats anything seen so far, add it to the unblocked list
+
+return reversed of list
+O(n)
+
+less efficient solutin:
+
 sort (index, building ht)
 
 look at [i0, i1, ....] where i0 = index of tallest building etc
@@ -17,15 +30,8 @@ if i1 falls before i0, it doesn't block anything new
 if it falls after i0, it blocks everything from [i0+1....i1-1] -- edge case if ht of i1 == ht of i0, it will block i0 also
 
 keep the rightmost index, ht and see where the new i_j falls ..
+O(nlog n)
 
-
-simpler solution:
-
-a building is not blocked iff it's larger than anything to its right
-go from right to left and keep the max seen so far
-if current building beats anything seen so far, add it to the unblocked list
-
-return reversed of list
 
 
 
