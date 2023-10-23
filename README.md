@@ -42,6 +42,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 211 | Trie, Recursion | Design add and search words data structure | [python](211_DesignAddAndSearchWordsDataStructure.py) | [explanation](211_DesignAddAndSearchWordsDataStructure_wb.txt)|
 | 213 | DP | House robber II | [python](213_HouseRobberII.py) | [explanation](213_HouseRobberII_wb.txt)|
 | 219 | Sliding Window | Contains duplicate II | [python](219_ContainsDuplicateII.py) | [explanation](219_ContainsDuplicateII_wb.txt)|
+| 227 | Stack, Queue | Basic calculator II | [python](227_BasicCalculatorII.py) | [explanation](227_BasicCalculatorII_wb.txt)|
 | 231 | Bit Manipulation | Power of two | [python](231_PowerOfTwo.py) | [explanation](231_PowerOfTwo_wb.pdf)|
 | 311 | Array | Sparse matrix multiplication | [python](311_SparseMatrixMultiplication.py) | [explanation](311_SparseMatrixMultiplication_wb.txt)|
 | 314 | BFS/DFS | Binary tree vertical order traversal | [python](314_BinaryTreeVerticalOrderTraversal.py) | [explanation](314_BinaryTreeVerticalOrderTraversal_wb.txt)|
