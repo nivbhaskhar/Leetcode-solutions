@@ -1,0 +1,18 @@
+408. Valid Word Abbreviation
+
+
+Problem:
+https://leetcode.com/problems/valid-word-abbreviation/description/
+
+Idea:
+Have a pointer in abbreviation and pointer in word
+
+Process characters in abbreviation
+
+if letter, make sure it matches with word pointer character
+
+if number, collect it till you hit new letter
+and increment the word pointer by that number
+
+continue
+
