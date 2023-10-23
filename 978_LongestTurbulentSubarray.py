@@ -2,7 +2,7 @@
 
 
 class Solution:
-    def maxTurbulenceSize(self, A: List[int]) -> int:
+    def maxTurbulenceSize(self, A: list[int]) -> int:
         n = len(A)
         if n==1:
             return 1

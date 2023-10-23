@@ -2,7 +2,7 @@
 import math
 import heapq
 class Solution:
-    def kClosest(self, points: List[List[int]], K: int) -> List[List[int]]:
+    def kClosest(self, points: list[list[int]], K: int) -> list[list[int]]:
         def euclidean_distance_from_origin(P):
             return -1*math.sqrt(P[0]**2 + P[1]**2)
         N = len(points)
