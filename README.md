@@ -75,6 +75,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 1306 | BFS/DFS | Jump Game III | [python](1306_JumpGameIII.py)| [explanation](1306_JumpGameIII_wb.txt)|
 |1512 | Dictionary | Number of good pairs | [python](1512_NumberOfGoodPairs.py) | [Explanation](1512_NumberOfGoodPairs_wb.txt)|
 |1162 | BFS | As far from land as possible | [python](1162_FarFromLand.py) | [TODO](1162_FarFromLand_wb.pdf)|
+|1762 | Array | Buildings with an ocean view | [python](1762_BuildingsWithAnOceanView.py) | [explanation](1762_BuildingsWithAnOceanView_wb.txt)|
 |2002 | Enumerative/DP | Max product of length of two palindromic subsequences | [python](2002_MaxProductOfLengthOfTwoPalindromicSubsequences.py) | [explanation](2002_MaxProductOfLengthOfTwoPalindromicSubsequences_wb.txt)|
 |2232 | String | Minimize result by adding parantheses to expression | [python](2232_MinimizeResultByAddingParanthesesToExpression.py) | [explanation](2232_MinimizeResultByAddingParanthesesToExpression_wb.txt) |
 |2251 | Queue, Heap | Number of flowers in full bloom | [python](2251_NumberOfFlowersInFullBloom.py) | [explanation](2251_NumberOfFlowersInFullBloom_wb.txt)|
