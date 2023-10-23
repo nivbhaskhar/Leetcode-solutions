@@ -1,0 +1,14 @@
+680. Valid Palindrome II
+
+
+Problem:
+https://leetcode.com/problems/valid-palindrome-ii/description/
+
+Idea:
+
+keep checking left and right end if equal
+
+if unequal, check str[left:right], str[left+1, right+1] to see if either is a palindrome
+
+write it as a recursive function with an extra parameter of whether omission is allowed
+
