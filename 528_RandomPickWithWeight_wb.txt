@@ -1,0 +1,41 @@
+528. Random Pick with Weight
+
+
+Problem:
+https://leetcode.com/problems/random-pick-with-weight/description/
+
+Idea:
+
+n integers
+
+find v_i so that if random r in [0,1]
+
+
+v_i-1 < r <= v_i --> picking n_i
+
+
+
+
+
+v_0 = w_0/sum(w)
+v_1 = v_0 + w_1/sum(w) = (w_0 + w_1)/sum(w)
+
+..
+
+v_n-1 = sum(w)/sum(w) = 1
+
+
+[v0,v1,....,v_n-1=1]
+
+given r in [0,1], pick v_i so that r <= v_i --> n_i
+
+
+
+
+
+
+
+
+
+
+

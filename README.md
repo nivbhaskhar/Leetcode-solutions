@@ -57,6 +57,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 452 | Sorting, Greedy | Minimum number of arrows to burst balloons | [python](452_MinimumNumberOfArrowsToBurstBalloons.py) | [explanation](452_MinimumNumberOfArrowsToBurstBalloons_wb.txt) |
 | 516 | DP/Memoize | Longest palindromic subsequence | [python](516_LongestPalindromicSubsequence.py) | [explanation](516_LongestPalindromicSubsequence_wb.txt) 
 | 518 | DP/Memoize | Coin change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
+| 528 | Binary Search | Random pick with weight | [python](528_RandomPickWithWeight.py) | [explanation](528_RandomPickWithWeight_wb.txt) |
 | 632 | Heap, Sliding Window | Smallest range covering rlements from K lists | [python](632_SmallestRangeCoveringElementsFromKLists.py) | [explanation](632_SmallestRangeCoveringElementsFromKLists_wb.txt) |
 | 642 | Trie | Design search autocomplete system | [python](642_DesignSearchAutocompleteSystem.py) | [explanation](642_DesignSearchAutocompleteSystem_wb.txt) |
 | 680 | Recursion | Valid Palindrome II | [python](680_ValidPalindromeII.py) | [explanation](680_ValidPalindromeII_wb.txt) |
