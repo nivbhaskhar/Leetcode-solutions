@@ -1,0 +1,9 @@
+1650. Lowest Common Ancestor of a Binary Tree III
+
+Problem:
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/
+
+Idea:
+ 
+walk up from a node to root and save all nodes in the path in a set
+then start walking up from other node to root, first time you see a node in the prev set --> that is is lca
