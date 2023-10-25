@@ -65,6 +65,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 719 | Binary Search, Sliding Window | Find k-th smallest pair distance | [python](719_FindKthSmallestPairDistance.py) | [explanation](719_FindKthSmallestPairDistance_wb.txt) |
 | 721 | Connected Components | Accounts Merge | [python](721_AccountsMerge.py) | [explanation](721_AccountsMerge_wb.txt) |
 | 751 | Binary strings | IP to CIDE | [python](751_IPToCIDR.py) | [explanation](751_IPToCIDR_wb.txt) |
+| 799 | DP | Champagne Tower | [python](799_ChampagneTower.py) | [explanation](799_ChampagneTower_wb.txt) |
 | 809 | Two Pointers | Expressive words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
 | 856 | Stack | Score of parantheses  | [python](856_ScoreOfParantheses.py) | [explanation](856_ScoreOfParantheses_wb.txt) |
 | 871 | Greedy, Heap/DP | Minimum number of refuelling stops | [python](871_MinimumNumberOfRefuellingStops.py) | [explanation](871_MinimumNumberOfRefuellingStops_wb.txt) |

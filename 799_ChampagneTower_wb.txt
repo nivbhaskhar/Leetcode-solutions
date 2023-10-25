@@ -1,0 +1,40 @@
+799. Champagne Tower
+
+Problem:
+https://leetcode.com/problems/champagne-tower/description/
+
+Idea:
+Simulate the problem
+
+Pour n glasses into first cup
+keep 1, overflow = n-1
+
+model overflow at glass at row i, col j for all rows < query row
+
+a glass receives half the overflow from each of its existing parents
+
+a glass has overflow if what it receives > 1..
+
+for the final query row, don't get overflow but actually output what is received and stored..
+
+
+everything is 0 indexed
+
+so row 0 : [glass 0]
+   row 1 : [glass 0, glass 1]
+   row 2 : [glass 0, glass 1, glass 2]
+
+
+   row r: [glass 0, .... glass r]
+
+
+glass s in row r has parents:
+
+if s == 0, parent is just row r-1, glass 0
+if s == r, parent is just row r-1, glass s-1 = r-1
+
+if 0 < s < r, parents are row r-1, glass s-1, s
+
+
+overflow[glass s in row r] = max( (sum of overflow[parents]/2)-1, 0)
+
