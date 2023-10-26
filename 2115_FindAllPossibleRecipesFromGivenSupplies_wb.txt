@@ -1,0 +1,67 @@
+2115. Find All Possible Recipes from Given Supplies
+
+Problem:
+https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/
+
+Idea:
+
+recipe 1: {x,y,z,...,}
+recipe2 : {x,y,recipe1...}
+
+
+memodict
+
+
+initialize with supplies
+{
+
+bread: True
+flour:  True
+corn: True..
+..
+}
+
+write a recursive function which checks if cn create a new recipe:
+
+if in memo_dict --> already know.
+
+if not, check if can_create each ingredient recursively
+
+finally update memo dict and return
+
+bug: if there's a cycle, i.e r1 needs r2 ... needs rn needs r1 ---> recursion infinite
+
+maintain visited -- if checking a new recipe, add to visited
+
+if you call can_create on a recipe which is not in memo dict but is visited, cycle detected and return False after adding to memo_dict
+
+-----
+
+cleaner:
+
+do topological sort if possible of graph
+
+
+
+add nodes of supplies and recipes
+
+add an edge y --> x if x needs y, if x needs a thing not in supplies or recipes --> cannot make x, delete x from nodes
+
+in degree 0 --> remove
+
+add new in degree 0 to recipes that can be created..
+
+
+
+...
+
+
+
+
+
+
+
+
+
+
+
