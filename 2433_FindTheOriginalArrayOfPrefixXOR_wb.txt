@@ -1,0 +1,44 @@
+2433. Find The Original Array of Prefix Xor
+
+
+Problem:
+https://leetcode.com/problems/find-the-original-array-of-prefix-xor/description/
+
+Idea:
+
+a_0 a_1 ...a_n
+
+
+b_0 .......b_n
+
+
+
+a_0 = b_0
+
+b_1 = a_0 x a_1 = b_0 x a_1
+
+a_1 = b_1 ^b_0 
+
+b_2 = b_1 ^ a_2
+
+b_2 ^ b_1 = a_2
+
+...
+
+
+x ^ x = 0
+
+0 ^ x = x
+
+...
+
+a_i = b_i ^ b_{i-1}
+
+a_0 = b_0 ^ 0
+
+O(n) solution
+
+
+
+
+
