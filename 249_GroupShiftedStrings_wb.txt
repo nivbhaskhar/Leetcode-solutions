@@ -1,0 +1,40 @@
+249. Group Shifted Strings
+
+Problem:
+https://leetcode.com/problems/group-shifted-strings/description/
+
+Idea:
+get a tuple rep of a string
+
+eg "abc" = (b-a, c-b)
+eg "x" = ()
+
+and maintain a dict of {tuple rep: [list of strings associated to it]}
+
+return the values of the dictionary
+
+
+edge case :
+
+az ---> [z-a]
+
+ba ---> [a-b]
+
+a ....z
+
+0     25
+
+
+
+-1 == 25 mod 26
+
+remember to make the rep mod 26
+
+time complexity:
+need to go through each string once --> O(num strings given)
+to get a numerical rep of each string --> O(len(string))
+
+so totally O(len(characters) across all strings)
+
+space complexity :
+same as O(len(characters))
