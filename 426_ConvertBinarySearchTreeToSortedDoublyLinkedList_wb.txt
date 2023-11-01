@@ -1,0 +1,41 @@
+426. Convert Binary Search Tree to Sorted Doubly Linked List
+
+Problem:
+https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/description/
+
+
+Idea:
+
+
+recursive function / in order traversal
+
+
+call on root ---> outputs max and min in subtree
+ inside:
+
+ left_max, left_min = call on left subtree
+ right_max, right_min = call on right subtree
+
+ left_max --> link to root. (right link) also make root --> left_max (left link)
+ root --> link to right_min (right link) also make root --> right_min (left link)
+ 
+ output min = left_min, max = right_max
+
+
+this will make a doubly linked list
+
+but for circular, finally link the last min and max... , i.e max successor = min predecessor
+
+
+base cases:
+
+if leaf node: min = max = itself
+
+if only one subtree:
+
+    4
+  2
+0   3
+
+min/max will be itself...
+
