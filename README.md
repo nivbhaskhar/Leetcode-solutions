@@ -71,6 +71,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 809 | Two Pointers | Expressive words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |
 | 856 | Stack | Score of parantheses  | [python](856_ScoreOfParantheses.py) | [explanation](856_ScoreOfParantheses_wb.txt) |
 | 871 | Greedy, Heap/DP | Minimum number of refuelling stops | [python](871_MinimumNumberOfRefuellingStops.py) | [explanation](871_MinimumNumberOfRefuellingStops_wb.txt) |
+| 921 | Stack | Minimum add to make parantheses valid | [python](921_MinimumAddToMakeParanthesesValid.py) | [explanation](921_MinimumAddToMakeParanthesesValid_wb.txt) |
 | 938 | Recursion | Range sum of BST | [python](938_RangeSumOfBST.py) | [explanation](938_RangeSumOfBST_wb.txt) |
 | 973 | Heap | K closest points to origin | [python](973_KClosestPointsToOrigin.py) | [explanation](973_KClosestPointsToOrigin_wb.pdf) |
 | 978 | Sliding Window | Longest turbulent subarray | [python](978_LongestTurbulentSubarray.py)| [TODO](978_LongestTurbulentSubarray_wb.pdf)|

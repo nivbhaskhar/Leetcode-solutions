@@ -1,0 +1,16 @@
+921. Minimum Add to Make Parentheses Valid
+
+
+Problem:
+https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/
+
+Idea:
+maintain stack length of unmatched open parantheses
+
+if see a closed paranthesis that you cannot match, you add a move to make it valid
+
+finally add leftover number of unmatched open parantheses
+
+O(N) time complexity
+
+O(1) space complexity
