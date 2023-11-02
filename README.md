@@ -45,7 +45,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 219 | Sliding Window | Contains duplicate II | [python](219_ContainsDuplicateII.py) | [explanation](219_ContainsDuplicateII_wb.txt)|
 | 227 | Stack, Queue | Basic calculator II | [python](227_BasicCalculatorII.py) | [explanation](227_BasicCalculatorII_wb.txt)|
 | 231 | Bit Manipulation | Power of two | [python](231_PowerOfTwo.py) | [explanation](231_PowerOfTwo_wb.pdf)|
-| 236 | BFS/DFS | Power of two | [python](236_LowestCommonAncestorOfABinaryTree.py) | [explanation](236_LowestCommonAncestorOfABinaryTree_wb.txt)|
+| 236 | BFS/DFS | Lowest common ancestory of a binary tree | [python](236_LowestCommonAncestorOfABinaryTree.py) | [explanation](236_LowestCommonAncestorOfABinaryTree_wb.txt)|
 | 249 | Dictionary | Group shifted strings | [python](249_GroupShiftedStrings.py) | [explanation](249_GroupShiftedStrings_wb.txt)|
 | 311 | Array | Sparse matrix multiplication | [python](311_SparseMatrixMultiplication.py) | [explanation](311_SparseMatrixMultiplication_wb.txt)|
 | 314 | BFS/DFS | Binary tree vertical order traversal | [python](314_BinaryTreeVerticalOrderTraversal.py) | [explanation](314_BinaryTreeVerticalOrderTraversal_wb.txt)|
