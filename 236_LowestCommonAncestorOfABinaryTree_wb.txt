@@ -1,0 +1,13 @@
+236. Lowest Common Ancestor of a Binary Tree
+
+Problem:
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+
+Idea:
+do a bfs/dfs tree traversal and update parent of each node
+
+walk up from p to root and maintain ancestors
+
+walk up from q to root till you hit a node in ancestors of p
+
+
