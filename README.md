@@ -15,6 +15,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 16 | Sort, Two Pointers | 3 sum closest | [python](16_3SumClosest.py)| [explanation](16_3SumClosest_wb.txt)|
 |17| Recursion | Letter combinations of phone numbers| [python](17_LetterCombinationsOfPhoneNumber.py) | [explanation](17_LetterCombinationsOfPhoneNumber_wb.pdf)|
 | 18 | Strings  | 4Sum | [python](18_4Sum.py)| [explanation](18_4Sum_wb.txt)|
+| 19 | Linked List  | Remove Nth node from end of list | [python](19_RemoveNthNodeFromEndOfList.py)| [explanation](19_RemoveNthNodeFromEndOfList_wb.txt)|
 |21| Linked List | Merge two sorted lists | [python](21_MergeTwoSortedLists.py)| [explanation](21_MergeTwoSortedLists_wb.txt)|
 | 22 | Recursion/Backtracking | Generate parantheses | [python](22_GenerateParantheses.py) | [explanation](22_GenerateParantheses_wb.txt) |
 | 27 | Two Pointers | Remove element | [python](27_RemoveElement.py) | [explanation](27_RemoveElement_wb.txt) |

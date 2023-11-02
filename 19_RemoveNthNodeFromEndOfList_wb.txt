@@ -1,0 +1,45 @@
+19. Remove Nth Node From End of List
+
+
+Problem:
+https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
+
+
+Idea:
+2 pass solution:
+
+find length of list = l
+removing n-th node from end = removing l-n + 1th node from beginning
+
+if l == n --> return head.next
+
+otherwise if l-n+1 is a valid node (i.e between 1 and l, walk to l-n th node and update its next to next.next)
+
+return head
+
+
+1 pass solution:
+
+if list is length n, n-th node from end = 1
+if list is length n+1, n-th node from end = 2
+
+1 2 ...... n=l n+1=l n+2 =l 
+
+            1   2     3
+
+
+have two pointers
+
+first pointer is at n+k, k=0,1,.....
+second pointer is at k
+
+and need to remove the k+1st node
+
+
+if you reach end of list before first pointer is at n+k, k>=0, then raise ValueError
+
+
+
+
+
+
