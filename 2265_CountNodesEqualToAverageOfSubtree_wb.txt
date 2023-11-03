@@ -1,0 +1,10 @@
+2265. Count Nodes Equal to Average of Subtree
+
+Problem:
+https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/
+
+Idea:
+recursion to find sum, num_of_nodes, ans at subtree of a node
+
+
+

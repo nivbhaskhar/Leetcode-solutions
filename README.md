@@ -92,6 +92,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 |2115 | Recursion/Topological Sort | Find all possible recipes from given supplies | [python](2115_FindAllPossibleRecipesFromGivenSupplies.py) | [explanation](2115_FindAllPossibleRecipesFromGivenSupplies_wb.txt)|
 |2232 | String | Minimize result by adding parantheses to expression | [python](2232_MinimizeResultByAddingParanthesesToExpression.py) | [explanation](2232_MinimizeResultByAddingParanthesesToExpression_wb.txt) |
 |2251 | Queue, Heap | Number of flowers in full bloom | [python](2251_NumberOfFlowersInFullBloom.py) | [explanation](2251_NumberOfFlowersInFullBloom_wb.txt)|
+|2265 | Recursion/Tree Traversal | Count nodes equal to average of subtree | [python](2265_CountNodesEqualToAverageOfSubtree.py) | [explanation](2265_CountNodesEqualToAverageOfSubtree_wb.txt)|
 |2302 | Sliding Window | Count subarrays with score less than k | [python](2302_CountSubarraysWithScoreLessThanK.py) | [explanation](2302_CountSubarraysWithScoreLessThanK_wb.txt)|
 |2433 | Bit Manipulation | Find the original array of prefix XOR | [python](2433_FindTheOriginalArrayOfPrefixXOR.py) | [explanation](2433_FindTheOriginalArrayOfPrefixXOR.txt)|
 |2815 | Array | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
