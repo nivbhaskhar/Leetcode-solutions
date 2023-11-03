@@ -1,0 +1,31 @@
+1331. Rank Transform of an Array
+
+Problem:
+https://leetcode.com/problems/rank-transform-of-an-array/description/
+
+Idea:
+sort array by its value, pos
+
+so [100,100,1] ---> [(2,1), (0,100), (1,100)] **
+
+create a ranks array of 0s 
+
+
+go through the sorted array **
+
+rank = 0
+
+for pos, val in sorted array
+  if current val > prev_val: 
+     increment rank and update ranks[pos]
+  prev_val = current_val
+
+
+this is O(nlogn) time complexity + O(n) space complexity
+
+
+
+if too many duplicates --> can sort list[set[numbers]] instead and create rank :  val == pos
+
+then walk through the array and look up its rank
+
