@@ -85,7 +85,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 1249 | Stack | Minimum remove to make valid parentheses | [python](1249_MinimumRemoveToMakeValidParentheses.py)| [explanation](1249_MinimumRemoveToMakeValidParentheses_wb.txt)|
 | 1293 | BFS | Shortest path in a grid with obstacles elimination | [python](1293_ShortestPathInAGridWithObstaclesElimination.py)| [explanation](1293_ShortestPathInAGridWithObstaclesElimination_wb.txt)|
 | 1306 | BFS/DFS | Jump Game III | [python](1306_JumpGameIII.py)| [explanation](1306_JumpGameIII_wb.txt)|
-| 1331 | Sorting,Array/Dictionary | Rank transform of an array | [python](1331_RankTransformOfAnArray.py)| [explanation](1331_RankTransformOfAnArray_wb.txt)|
+| 1331 | Sorting, Array/Dictionary | Rank transform of an array | [python](1331_RankTransformOfAnArray.py)| [explanation](1331_RankTransformOfAnArray_wb.txt)|
 |1512 | Dictionary | Number of good pairs | [python](1512_NumberOfGoodPairs.py) | [Explanation](1512_NumberOfGoodPairs_wb.txt)|
 |1650 | Binary Tree | Lowest common ancestor of a binary tree III | [python](1650_LowestCommonAncestorOfABinaryTreeIII.py) | [Explanation](1650_LowestCommonAncestorOfABinaryTreeIII_wb.txt)|
 |1762 | Array | Buildings with an ocean view | [python](1762_BuildingsWithAnOceanView.py) | [explanation](1762_BuildingsWithAnOceanView_wb.txt)|
