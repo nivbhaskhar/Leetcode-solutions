@@ -1,0 +1,66 @@
+2095. Delete the Middle Node of a Linked List
+
+Problem:
+https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
+
+
+Idea:
+
+(1 pass)
+
+
+if there is no node/just one node, after deleting it is None --> return None
+
+otherwise original list has >=2 nodes
+
+
+n=num_nodes
+m = middle_node (1 = first node)
+
+n: 2 3 4 5 6 7
+
+m: 2 2 3 3 4 4 <-- node to be deleted
+
+
+when fast pointer is at n, slow pointer should be at m-1 so that you can make slow_pointer.next --> slow_pointer.next.next
+
+
+
+
+create a dummy node --> head, dummy node is 0 
+
+fast_pointer is at head [1]
+slow_pointer is at dummy [0]
+
+while fast_pointer has a next:
+  move fast_pointer by 1
+  if possible move by 1 again
+  move slow pointer by 1
+
+when you exit the while loop, fast_pointer is at n
+slow_pointer is at m-1
+
+do the slow_pointer.next --> slow_pointer.next.next
+
+return dummy_node's next
+
+(2 pass)
+
+compute n = length of list
+have to delete n//2+1 th node [where start node is 1]
+
+so walk to n//2 th node and delete the next one
+
+edge:
+
+n//2 = 0 --> for n=1 --> delete the head node
+
+
+
+
+
+
+
+
+
+
