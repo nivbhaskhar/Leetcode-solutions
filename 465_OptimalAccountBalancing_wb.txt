@@ -1,0 +1,65 @@
+465. Optimal Account Balancing
+
+
+Problem:
+https://leetcode.com/problems/optimal-account-balancing/description/
+
+Idea:
+
+each person should have 0 net balance at end
+
+calculate current net balance for each person by going through all transactions:
+
+eg is A has given $x money, currently A has -x balance
+if B has received $x money, currently B has x balance etc
+
+
+
+so you'll have
+
+net balances
+
+
+[-4, 3, 1, 0, .....]
+
+
+get rid of people with 0 net balances already
+
+
+
+main idea: imagine if all people just handed or got money from a particular person [who plays role of a bank]
+
+so if there are n people, num transactions needed are <= n-1 !! 
+
+
+i.e one person can clear all their balance with just 1 another person..
+
+
+
+strategy: solve recursively
+
+0th person has to get +4 and they are clear
+
+for people ahead of the person:
+
+	make the person give it to them and see if can recurse on a shorter list
+
+	* heuristic if person i needs to give away money, only consider person j is they have to receive some money ---> why should this work (unclear...)
+
+	* another heuristic, do connected components with respect to transactions and work within the component with the strategy...
+
+
+
+recursive function should taken in pos i , net_balances and return min transactions to clear everyone up from i onwards
+
+  try clearing person i with person j for j > i and recurse on i+1, new net balances
+  take min of num transactions and choose best person i can clear balance with
+
+
+
+time complexity O(n-1 !) ---> recursion(pos 0 ) --> have to make n-1 calls to recursion(pos 1) and so on..
+
+
+
+space complexity O(n)
+     

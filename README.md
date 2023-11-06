@@ -60,6 +60,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 408 | Recursion/Tree traversal | Convert binary search tree to sorted doubly linked list | [python](426_ConvertBinarySearchTreeToSortedDoublyLinkedList.py) | [explanation](426_ConvertBinarySearchTreeToSortedDoublyLinkedList_wb.txt) |
 | 443 | Two Pointer/Queue| String compression | [python](443_StringCompression.py) | [explanation](443_StringCompression_wb.txt) |
 | 452 | Sorting, Greedy | Minimum number of arrows to burst balloons | [python](452_MinimumNumberOfArrowsToBurstBalloons.py) | [explanation](452_MinimumNumberOfArrowsToBurstBalloons_wb.txt) |
+| 465 | Array | Optimal Account Balancing | [python](465_OptimalAccountBalancing.py) | [explanation](465_OptimalAccountBalancing_wb.txt) |
 | 516 | DP/Memoize | Longest palindromic subsequence | [python](516_LongestPalindromicSubsequence.py) | [explanation](516_LongestPalindromicSubsequence_wb.txt) 
 | 518 | DP/Memoize | Coin change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
 | 528 | Binary Search | Random pick with weight | [python](528_RandomPickWithWeight.py) | [explanation](528_RandomPickWithWeight_wb.txt) |
