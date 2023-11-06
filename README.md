@@ -97,6 +97,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 |2265 | Recursion/Tree Traversal | Count nodes equal to average of subtree | [python](2265_CountNodesEqualToAverageOfSubtree.py) | [explanation](2265_CountNodesEqualToAverageOfSubtree_wb.txt)|
 |2302 | Sliding Window | Count subarrays with score less than k | [python](2302_CountSubarraysWithScoreLessThanK.py) | [explanation](2302_CountSubarraysWithScoreLessThanK_wb.txt)|
 |2433 | Bit Manipulation | Find the original array of prefix XOR | [python](2433_FindTheOriginalArrayOfPrefixXOR.py) | [explanation](2433_FindTheOriginalArrayOfPrefixXOR.txt)|
+|2483 | Array | Minimum penalty for a shop | [python](2483_MinimumPenaltyForAShop.py) | [explanation](2483_MinimumPenaltyForAShop_wb.txt)|
 |2815 | Array | Max pair sum in array | [python](2815_MaxPairSumInArray.py) | [explanation](2815_MaxPairSumInArray_wb.txt)|
 |2817 |  | Minimum absolute difference between elements with constraint | [TODO](2817_MinimumAbsoluteDifferenceBetweenElementsWithConstraint.py) | [explanation](2817_MinimumAbsoluteDifferenceBetweenElementsWithConstraint_wb.txt)|
 |2843 | Array | Count symmetric integers | [python](2843_CountSymmetricIntegers.py) | [explanation](2843_CountSymmetricIntegers_wb.txt)|

@@ -1,0 +1,51 @@
+2483. Minimum Penalty for a Shop
+
+Problem :
+https://leetcode.com/problems/minimum-penalty-for-a-shop/description/
+
+
+Idea:
+Open: see 'N' --> +1
+Closed : see 'Y' -> +1
+
+
+
+two pass solution + O(N) memory:
+
+keep track of {num N, num Y till each pos}
+
+
+penalty if closing at pos i = number of Ns till pos[i-1] + number of Ys from pos[i:]
+
+choose min penalty
+
+
+
+one pass solution:
+
+total N , total Y --> n, m
+
+maintain total N in prefix [:i] and total Y in suffix [i:]
+penalty = total N in prefix + total Y in suffix
+
+for pos i= n-1 to 0:
+ if see 'Y':
+    increment total Y in suffix
+ if see 'N':
+    decrement total N in prefix
+
+ compute penalty
+
+keep track of min penalty and return the winning i
+
+O(1) space complexity
+
+
+
+
+
+
+
+
+
+
