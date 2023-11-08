@@ -90,6 +90,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 |1512 | Dictionary | Number of good pairs | [python](1512_NumberOfGoodPairs.py) | [Explanation](1512_NumberOfGoodPairs_wb.txt)|
 |1650 | Binary Tree | Lowest common ancestor of a binary tree III | [python](1650_LowestCommonAncestorOfABinaryTreeIII.py) | [Explanation](1650_LowestCommonAncestorOfABinaryTreeIII_wb.txt)|
 |1762 | Array | Buildings with an ocean view | [python](1762_BuildingsWithAnOceanView.py) | [explanation](1762_BuildingsWithAnOceanView_wb.txt)|
+|1926 | BFS | Nearest exit from entrance in maze | [python](1926_NearestExitFromEntranceInMaze.py) | [explanation](1926_NearestExitFromEntranceInMaze_wb.txt)|
 |2002 | Enumerative/DP | Max product of length of two palindromic subsequences | [python](2002_MaxProductOfLengthOfTwoPalindromicSubsequences.py) | [explanation](2002_MaxProductOfLengthOfTwoPalindromicSubsequences_wb.txt)|
 |2095 | Linked List | Delete the middle node of a linked list | [python](2095_DeleteTheMiddleNodeOfALinkedList.py) | [explanation](2095_DeleteTheMiddleNodeOfALinkedList_wb.txt)|
 |2115 | Recursion/Topological Sort | Find all possible recipes from given supplies | [python](2115_FindAllPossibleRecipesFromGivenSupplies.py) | [explanation](2115_FindAllPossibleRecipesFromGivenSupplies_wb.txt)|
