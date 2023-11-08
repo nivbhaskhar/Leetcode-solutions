@@ -1,0 +1,44 @@
+636. Exclusive Time of Functions
+
+Problem:
+https://leetcode.com/problems/exclusive-time-of-functions/description/
+
+
+Idea:
+
+
+sort by time stamp
+
+
+keep putting job_no, start_time in stack
+
+if you hit job_no, end_time :: it should match with top of stack --> if after removing stack is not empty, do nothing
+
+ time of job += (end_time-start_time+1)
+
+
+ if stack is not empty at this point: time_of_job_of last entry in stack -= (end_time-start_time+1)
+
+repeat
+..
+
+
+0,s,0
+
+1,s,6
+1,e,7
+
+0,e, 7
+
+
+when you process 1,e,7
+
+--> 1: 7-6+1
+---> 0: -(7-6+1). --> remove this time spent in the function just prev, since you'll be adding in a bigger interval later..
+
+
+when you process 0,e,7
+
+--> 1:2, 0: -1 + (7-0+1) = 7
+
+
