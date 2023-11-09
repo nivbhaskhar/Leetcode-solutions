@@ -1,0 +1,50 @@
+691. Stickers to Spell Word
+
+
+Problem:
+https://leetcode.com/problems/stickers-to-spell-word/description/
+
+Idea:
+If you use n_i of the i-th sticker
+
+need to minimize \sum n_i while satisfying 
+
+
+unique letter k count in target <= \sum n_i*(letter k count in ith sticker) for all k..
+
+this is linear programming but need answer vector to be integers --> NP hard [if float answers, can do some find vertices of polytope defined by the inequalities stuff]
+
+
+so need to do a recursive/backtracking type exploration
+
+
+*pick a letter in target:
+
+for a sticker containing this letter: 
+  * try to satisfy it with a sticker --> this will also satisfy some other letters (with counts)
+  * recurse on the smaller set of characters in target that need to be satisfied..
+  * get best moves
+
+over all compare best moves across different paths, and return min of them
+
+
+
+----
+
+* can do some preprocessing by removing a sticker <= another sticker, deciding if a target can never be achieved, removing stickers with no overlap with the target etc
+
+* a more useful thing to do is to prune the search tree --> this requires designing the recursion carefully
+
+it's like a dfs style exploration where (imagine you are traversing a tree where root<-> entire target needs to be filled and leaf nodes <--> all target characters filled)
+ 
+
+to reach a node, you would have had to use some number of stickers --> that is num_moves_made that your recursive function needs to track
+
+
+this is useful for pruning, because if during the traversal, at a node you realize that num_moves_made already exceeds the best_num_moves of a previous path to a leaf, then you don't need to continue on current path [prune it]
+
+
+see the code for clearer implementation details
+
+
+Complexity : exponential
