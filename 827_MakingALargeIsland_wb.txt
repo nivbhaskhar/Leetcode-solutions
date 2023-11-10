@@ -1,0 +1,60 @@
+827. Making A Large Island
+
+
+Problem:
+https://leetcode.com/problems/making-a-large-island/description/
+
+Idea:
+
+
+cells with 1 --> nodes
+
+connect with edge if they are adjacent cells
+
+find connected components + sizes
+
+
+need 
+
+component: size
+
+each cell : which component it belongs
+
+
+---
+
+
+making a 0 cell to 1:
+
+
+
+look at its nbhrs:
+
+   ?
+ ? 0 ?
+   ?
+ 
+
+if make it 0, new component of size 1 + (size of component of rep in it)
+
+pick the best such cell
+
+---
+
+time complexity :
+
+DFS --> O(n^2 + 4n) = O(V+E) for graph
+
+the O(n^2) --> to decide which 0 to tur to 1
+
+space complexity :
+
+store : {component: size}, {cell: which component it belongs to} --> O(n^2)
+
+
+
+
+
+
+
+
