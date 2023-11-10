@@ -1,0 +1,48 @@
+
+791. Custom Sort String
+
+Problem:
+https://leetcode.com/problems/custom-sort-string/description/
+
+
+Idea:
+
+initial :
+create a rank dict from order , i.e. first_letter: 1, ....
+sort the string with key = lambda x: rank[x] or math.inf...
+
+
+O(n log n) solution where n= len(string to be sorted)
+space complexity : O(n + m) where m = len(order)
+
+
+more efficient :
+
+create a counter for string {letter: num times it appears in string}
+
+go through letters in order, and append them appropriate number of times in ans (based on counter)
+reset the count to 0 for these letters
+
+now run through counter again and add in any letters with positive count appropriate num times
+
+eg: order cba 
+    string aababd
+
+
+counter = {a:3,b:2, d:1}
+
+ans = [c]*0 + [b]*2 + [a]*3 --> here count of b and a reset to 0
+
+
+counter = {a:0,b:0, d:1}
+
+ans += [d]*1
+
+so ans = bbaaad 
+
+time complexity O(n+m) where n = len(string), m = len(order)
+space complexity : O(n)
+
+
+
+
