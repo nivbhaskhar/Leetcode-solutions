@@ -47,6 +47,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 231 | Bit Manipulation | Power of two | [python](231_PowerOfTwo.py) | [explanation](231_PowerOfTwo_wb.pdf)|
 | 236 | Binary Tree, BFS/DFS | Lowest common ancestor of a binary tree | [python](236_LowestCommonAncestorOfABinaryTree.py) | [explanation](236_LowestCommonAncestorOfABinaryTree_wb.txt)|
 | 249 | Dictionary | Group shifted strings | [python](249_GroupShiftedStrings.py) | [explanation](249_GroupShiftedStrings_wb.txt)|
+| 301 | Backtracking, DFS | Remove invalid parantheses | [python](301_RemoveInvalidParantheses.py) | [explanation](301_RemoveInvalidParantheses_wb.txt)|
 | 311 | Array | Sparse matrix multiplication | [python](311_SparseMatrixMultiplication.py) | [explanation](311_SparseMatrixMultiplication_wb.txt)|
 | 314 | BFS/DFS | Binary tree vertical order traversal | [python](314_BinaryTreeVerticalOrderTraversal.py) | [explanation](314_BinaryTreeVerticalOrderTraversal_wb.txt)|
 | 322 | DP/Memoize | Coin Change | [python](322_CoinChange.py) | [explanation](322_CoinChange_wb.txt)|

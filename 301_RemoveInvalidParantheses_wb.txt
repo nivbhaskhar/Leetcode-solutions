@@ -1,0 +1,103 @@
+301. Remove Invalid Parentheses
+
+Problem:
+https://leetcode.com/problems/remove-invalid-parentheses/description/
+
+Idea:
+
+First using stack -- count how many number of ( and number of ) to be removed 
+
+keep putting ( in to stack
+when hit ), if you can pair it up with top of stack - OK
+if not, need to remove )
+
+at the end, need to remove extra ( in the stack
+
+let a = num ( to remove and b = num ) to remove
+
+to get all valid expressions:
+
+one idea (haven't thought through completely) : if you also keep track of pos of ) to be removed:
+
+eg:
+
+()() )
+
+     ^
+
+valid expr : first extra ) at pos k
+
+
+can delete any ) before pos k and still get a valid expr...     
+
+....
+
+
+seems a bit complicated to recurse on
+
+
+more straighforward backtracking:
+
+do a dfs style exploration of the expression
+
+node state :
+
+num of ( kept = a_kept
+num of ) kept = b_kept
+
+num of ( removed = a_rem
+num of ) removed = b_rem
+
+pos removed : [.....] --> len = a_rem + b_rem
+
+
+
+(())()
+
+position to explore = pos
+
+now at pos :
+
+it could be ( or ) or letter
+
+if letter, keep it, go to next node where pos to explore = pos+1
+
+if ( :
+
+  check if have choice to remove it:
+     is a_rem + 1 <= a [still have quota to remove]
+  --> if yes, dfs on that node
+
+  check if have choice to keep it (if you keep this (, possible to close it later on):
+     # any suffix must have ) >= than (
+
+     is total_a - a - (a_kept) <= total_b - (b) - (b_kept)?
+   --> if yes dfs on that node
+
+
+
+if ):
+  check if have choice to remove it:
+     is b_rem + 1 <= b [still have quota to remove]
+
+   --> if yes, dfs on that node
+  check if have choice to keep it:
+      # any prefix must have ( >= than )
+      is a_kept >= b_kept + 1
+    
+   --> if yes dfs on that node
+   # back tracking means keeping the node state clean..
+
+
+if at last position + 1:
+
+check if valid i.e a, b numbers have been removed
+a_kept == b_kept
+ 
+if yes, add valid expression to global ans and return 
+
+
+
+
+
+
