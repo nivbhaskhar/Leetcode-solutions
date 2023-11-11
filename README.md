@@ -33,6 +33,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 102 | BFS | Binary tree level order traversal | [python](102_BinaryTreeLevelOrderTraversal.py) | [explanation](102_BinaryTreeLevelOrderTraversal_wb.txt)|
 | 120 | DP | Triangle | [python](120_Triangle.py) | [explanation](120_Triangle_wb.txt)|
 | 128 | Dictionary | Longest consecutive sequence | [python](128_LongestConsecutiveSequence.py) | [explanation](128_LongestConsecutiveSequence_wb.txt)|
+| 129 | Backtracking/DFS | Sum root to leaf numbers | [python](129_SumRootToLeafNumbers.py) | [explanation](129_SumRootToLeafNumbers_wb.txt)|
 | 138 | Linked List | Copy list with random pointer | [python](138_CopyListWithRandomPointer.py) | [explanation](138_CopyListWithRandomPointer_wb.txt)|
 | 139 | DP/Memoize| Word break | [python](139_WordBreak.py) | [explanation](139_WordBreak_wb.txt)|
 | 141 | Linked List | Linked list cycle | [python](141_LinkedListCycle.py) | [explanation](141_LinkedListCycle_wb.txt)|
@@ -74,6 +75,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 719 | Binary Search, Sliding Window | Find k-th smallest pair distance | [python](719_FindKthSmallestPairDistance.py) | [explanation](719_FindKthSmallestPairDistance_wb.txt) |
 | 721 | Connected Components | Accounts Merge | [python](721_AccountsMerge.py) | [explanation](721_AccountsMerge_wb.txt) |
 | 751 | Binary strings | IP to CIDE | [python](751_IPToCIDR.py) | [explanation](751_IPToCIDR_wb.txt) |
+| 766 | Array | Toeplitz matrix | [python](766_ToeplitzMatrix.py) | [explanation](766_ToeplitzMatrix_wb.txt) |
 | 791 | Dictionary | Custom sort string | [python](791_CustomSortString.py) | [explanation](791_CustomSortString_wb.txt) |
 | 799 | DP | Champagne Tower | [python](799_ChampagneTower.py) | [explanation](799_ChampagneTower_wb.txt) |
 | 809 | Two Pointers | Expressive words | [TODO](809_ExpressiveWords.py) | [explanation](809_ExpressiveWords_wb.pdf) |

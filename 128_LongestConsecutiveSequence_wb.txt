@@ -1,4 +1,4 @@
-128. Triangle
+128. Longest Consecutive Sequence
 
 Problem:
 https://leetcode.com/problems/longest-consecutive-sequence/description

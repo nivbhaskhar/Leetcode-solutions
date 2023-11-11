@@ -1,0 +1,22 @@
+129. Sum Root to Leaf Numbers
+
+Problem:
+https://leetcode.com/problems/sum-root-to-leaf-numbers/description/
+
+Idea:
+back tracking (dfs style) - 
+
+node state :
+
+digits seen = list
+
+return ans = sum of leaf paths from node for subtree at node
+
+
+
+
+if at node, 
+
+ add node.digit to digits seen
+ if at leaf, make list into num , pop node.digit out and return num
+ if at internal node, get left_ans on left_subtree, right_ans on right_subtree, pop node.digit out and return left_ans + right_ans
