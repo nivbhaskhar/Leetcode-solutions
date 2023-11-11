@@ -1,0 +1,31 @@
+162. Find Peak Element
+
+Problem:
+https://leetcode.com/problems/find-peak-element/description/
+
+
+Idea: 
+
+
+peak is ---inc--*---dec
+
+
+mid+1 val = z
+mid val = x
+mid-1 val = y
+
+
+if x < z :
+   [mid...end] has an inc trend and find peak
+
+if y > x:
+   [....mid] has a dec trend and go up to find peak
+
+
+y < x > z --> x is peak already
+
+
+
+
+
+

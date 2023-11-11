@@ -37,6 +37,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 139 | DP/Memoize| Word break | [python](139_WordBreak.py) | [explanation](139_WordBreak_wb.txt)|
 | 141 | Linked List | Linked list cycle | [python](141_LinkedListCycle.py) | [explanation](141_LinkedListCycle_wb.txt)|
 | 153 | Binary Search | Find minimum in rotated sorted array | [python](153_FindMinimumInRotatedSortedArray.py) | [explanation](153_FindMinimumInRotatedSortedArray_wb.txt)|
+| 162 | Binary Search | Find peak element | [python](162_FindPeakElement.py)| [explanation](162_FindPeakElement_wb.txt)|
 | 167 | Two Pointers  | Two sum II  | [python](167_TwoSumII.py)| [explanation](167_TwoSumII_wb.txt)|
 | 199 | BFS | Binary tree right side view | [python](199_BinaryTreeRightSideView.py) | [explanation](199_BinaryTreeRightSideView_wb.txt)|
 | 206 | Linked List | Reverse linked list | [python](206_ReverseLinkedList.py) | [explanation](206_ReverseLinkedList_wb.txt)|
