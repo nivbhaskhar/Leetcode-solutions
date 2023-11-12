@@ -1,0 +1,41 @@
+670. Maximum Swap
+
+Problem:
+https://leetcode.com/problems/maximum-swap/description/
+
+Idea:
+
+keep track of digits: last occurence position
+
+sort digits in descending order
+
+go through zip(original digits, sorted digits):
+  first time there's a disparity, you need to swap out the original digit and sorted digit 
+  there might be multiple copies of the sorted digit, swap out with the last such digit
+
+
+eg
+
+digits = 9288
+
+last ocurrence pos
+9 :0
+2: 1
+8:3
+
+sorted:
+9882
+
+look at zip(9288,9822)
+  9 = 9 OK
+ 2 != 8 --> need to swap 2 and 8, but which 8? the 8 at pos 3
+
+so 
+
+9288
+ ^ ^
+
+swap gives
+
+9882
+

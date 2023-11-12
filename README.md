@@ -70,6 +70,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 632 | Heap, Sliding Window | Smallest range covering rlements from K lists | [python](632_SmallestRangeCoveringElementsFromKLists.py) | [explanation](632_SmallestRangeCoveringElementsFromKLists_wb.txt) |
 | 636 | Stack | Exclusive time of functions | [python](636_ExclusiveTimeOfFunctions.py) | [explanation](636_ExclusiveTimeOfFunctions_wb.txt) |
 | 642 | Trie | Design search autocomplete system | [python](642_DesignSearchAutocompleteSystem.py) | [explanation](642_DesignSearchAutocompleteSystem_wb.txt) |
+| 670 | Sorting, Array | Maximum swap | [python](670_MaximumSwap.py) | [explanation](670_MaximumSwap_wb.txt) |
 | 680 | Recursion | Valid Palindrome II | [python](680_ValidPalindromeII.py) | [explanation](680_ValidPalindromeII_wb.txt) |
 | 691 | Recursion/Backtracking | Stickers to spell word | [python](691_StickersToSpellWord.py) | [explanation](691_StickersToSpellWord_wb.txt) |
 | 708 | Linked List | Insert into a sorted circular linked list | [python](708_InsertIntoASortedCircularLinkedList.py) | [explanation](708_InsertIntoASortedCircularLinkedList_wb.txt) |
