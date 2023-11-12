@@ -1,0 +1,44 @@
+346. Moving Average from Data Stream
+
+Problem:
+https://leetcode.com/problems/moving-average-from-data-stream/
+
+Idea:
+have a counter : initially 0
+
+have a heap to store (pos, value) pairs --> (0,val), (1,val1) ,2......
+
+max_size of heap = k
+
+
+when get a new value:
+
+increment timestamp
+
+check heap size, if < k, add (time_stamp, val)
+if >=k, kick out top of heap and then add (time_stamp, val)
+
+return avg of heap
+
+
+maintain sum of heap in state to compute avg more easily
+
+
+complexity analysis:
+
+time complexity
+
+each insert operation : --> delete + insert = O(log(k))
+
+
+space complexity : O(k)
+
+where k = window size
+
+
+
+better solution:
+
+why heap, each time only need to pop the oldest element, can use queue!!
+
+time complexity becomes O(1) then
