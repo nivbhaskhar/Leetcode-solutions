@@ -1,0 +1,54 @@
+523. Continuous Subarray Sum
+
+Problem:
+https://leetcode.com/problems/continuous-subarray-sum/description/
+
+Idea:
+compute prefix sums mod k:
+
+prefix_sum(j) = sum(arr[:j+1]) mod k
+
+prefix_sum(0,1,...n-1) are valid
+
+if any value here is 0 mod k --> return True
+
+[0_val, 1_val, ... ,n-1_val]
+
+bucket into mod k values:
+
+
+i: [j so that prefix_sum(j) == i mod k] --> build in sorted order of j
+
+
+look at last entry and first entry in this list for each i..
+
+i : [first_pos,....., last_pos]
+
+
+[.....last_pos] - [....first_pos] = [first_pos+1,....last_pos], want this to be at least 2
+
+
+[2,3] --> 3-2 +1 >= 2
+
+last_pos - first_pos-1 + 1 = last_pos - first_pos >= 2 ---> have found a good subarray
+
+time complexity:
+
+to build up this bucketed val: pos -> linear time
+
+space complexity :
+
+num keys = k
+sum of len of values = n = len(array)
+
+O(min(k, n))
+
+
+
+
+
+
+
+
+
+

@@ -67,6 +67,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 465 | Array | Optimal Account Balancing | [python](465_OptimalAccountBalancing.py) | [explanation](465_OptimalAccountBalancing_wb.txt) |
 | 516 | DP/Memoize | Longest palindromic subsequence | [python](516_LongestPalindromicSubsequence.py) | [explanation](516_LongestPalindromicSubsequence_wb.txt) 
 | 518 | DP/Memoize | Coin change 2 | [python](518_CoinChange2.py) | [explanation](518_CoinChange2_wb.pdf) |
+| 523 | Dictionary, Array, Precompute prefix | Continuous subarray sum | [python](523_ContinuousSubarraySum.py) | [explanation](523_ContinuousSubarraySum_wb.txt) |
 | 528 | Binary Search | Random pick with weight | [python](528_RandomPickWithWeight.py) | [explanation](528_RandomPickWithWeight_wb.txt) |
 | 632 | Heap, Sliding Window | Smallest range covering rlements from K lists | [python](632_SmallestRangeCoveringElementsFromKLists.py) | [explanation](632_SmallestRangeCoveringElementsFromKLists_wb.txt) |
 | 636 | Stack | Exclusive time of functions | [python](636_ExclusiveTimeOfFunctions.py) | [explanation](636_ExclusiveTimeOfFunctions_wb.txt) |
