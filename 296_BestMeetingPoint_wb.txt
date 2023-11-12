@@ -1,0 +1,32 @@
+296. Best Meeting Point
+
+Problem:
+https://leetcode.com/problems/best-meeting-point/description/
+
+Idea:
+
+minimize \sum_i |x-x_i| + |y-y_i|
+
+minimize \sum_i |x-x_i|, \sum_i |y-y_i|
+
+
+can group x_is and compute a weighted n_i|x-x_i| for distinct x_is
+
+
+time complexity:
+
+O(num_rows^2) + O(num_col^2)
+
+--> because computing a candidate sum is O(num_rows) for a given x etc..
+
+
+space complexity:
+
+O(num_rows) + O(num_cols)
+
+
+apparently median minimized \sum l1 norms
+finding median in this case [bucket sort] can be done in linear time --O(num_rows) + O(num_cols)
+
+
+

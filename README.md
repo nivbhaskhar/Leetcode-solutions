@@ -50,7 +50,8 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 231 | Bit Manipulation | Power of two | [python](231_PowerOfTwo.py) | [explanation](231_PowerOfTwo_wb.pdf)|
 | 236 | Binary Tree, BFS/DFS | Lowest common ancestor of a binary tree | [python](236_LowestCommonAncestorOfABinaryTree.py) | [explanation](236_LowestCommonAncestorOfABinaryTree_wb.txt)|
 | 249 | Dictionary | Group shifted strings | [python](249_GroupShiftedStrings.py) | [explanation](249_GroupShiftedStrings_wb.txt)|
-| 270 | Recursion | Cloest Binary Search Tree Value | [python](270_ClosestBinarySearchTreeValue.py) | [explanation](270_ClosestBinarySearchTreeValue_wb.txt)|
+| 270 | Recursion | Closest Binary Search Tree Value | [python](270_ClosestBinarySearchTreeValue.py) | [explanation](270_ClosestBinarySearchTreeValue_wb.txt)|
+| 296 | Array | Best meeting point | [python](296_BestMeetingPoint.py) | [explanation](296_BestMeetingPoint_wb.txt)|
 | 301 | Backtracking, DFS | Remove invalid parantheses | [python](301_RemoveInvalidParantheses.py) | [explanation](301_RemoveInvalidParantheses_wb.txt)|
 | 311 | Array | Sparse matrix multiplication | [python](311_SparseMatrixMultiplication.py) | [explanation](311_SparseMatrixMultiplication_wb.txt)|
 | 314 | BFS/DFS | Binary tree vertical order traversal | [python](314_BinaryTreeVerticalOrderTraversal.py) | [explanation](314_BinaryTreeVerticalOrderTraversal_wb.txt)|
