@@ -1,0 +1,58 @@
+1535. Find the Winner of an Array Game
+
+Problem:
+https://leetcode.com/problems/find-the-winner-of-an-array-game/description/
+
+Idea:
+
+a number will win the first round if it is > all numbers in front of it.
+
+max number once it starts playing will always win, so no need to worry about a number which loses and then comes to battle second time...
+
+
+
+if it loses a first round --> it can never win again
+
+
+so concentrate on numbers which can win the first round --> 1
+
+and check that it's larger than k-1 numbers following it --> will win k consecutive rounds
+
+
+inefficient algorithm
+
+do a linear scan for each number --> to see if bigger than all numbers in front of it and k-1 numbers behind it..
+
+O(n^2) 
+
+need to do letter as array length is 10^5
+
+
+if k >= n: only max will win
+
+assume k <= n-1
+
+
+after more thought:
+
+val at pos i is a candidate if it is max in 
+
+[...i [..k-1. entries..]] if i>=1
+
+[0 [...k entries]]  if i=0
+
+
+if i is 0, look at [0,1..., k] --> val at 0 has to be max
+if i >= 1, look at [0,...i-1, i, ......i+k-1] --> val at i has to be max
+
+
+need to compute max of prefix arrays for [:k+1], [:k+2], .... [:n = k+n-k], n = len(arr)
+
+
+what about candidates at pos > n-k ? --> only if max is there, it will win..
+
+........|......
+        n-k+1
+
+......
+
