@@ -1,0 +1,22 @@
+708. Insert into a Sorted Circular Linked List
+
+
+Problem:
+https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/description/
+Idea:
+
+initial :
+detect inc trend/strictly dec trend ---> if list has > 1 unique element
+
+if inc trend and val is between curr_val and next_val, insert node in between
+
+if strictly dec trend and val is >= curr_val or < next_val, insert node in between
+
+
+edge case : 1 unique value
+
+so no strictly dec trend, then how to insert val > unique val or val < unique val ?
+
+detect if we see head again --> if next node is head again, insert new val in between
+
+O(N) where N is len of linked list
