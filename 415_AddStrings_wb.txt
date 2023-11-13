@@ -1,0 +1,14 @@
+415. Add Strings
+
+Problem:
+https://leetcode.com/problems/add-strings/description/
+
+Idea:
+implemented the more general add numbers with decimal places
+
+need to do digit by digit
+
+before that pad with 0s appropriately and handle whole places and decimal places separately for the padding
+
+add a . in the correct place at the end
+
