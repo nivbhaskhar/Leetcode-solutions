@@ -1,0 +1,21 @@
+215. Kth Largest Element in an Array
+
+
+Problem:
+https://leetcode.com/problems/kth-largest-element-in-an-array/
+
+Idea:
+
+do the initial bit of quick sort..
+
+
+pick a pivot, in place do ...[< pivot, > pivot, = pivot]
+
+decide where the k-th largest element will lie and recurse..
+
+avg time complexity
+
+T(n) = O(n) + T(n/2) --> hoping pivot will reduce search space by half..
+
+this is O(n)
+
