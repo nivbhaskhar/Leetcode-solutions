@@ -1,0 +1,21 @@
+198. House Robber
+
+
+Problem:
+https://leetcode.com/problems/house-robber/description/
+
+
+Idea:
+
+f(i) = ans for nums[i:..]
+
+want f(0)
+
+
+
+f(i) = max(f(i+1), nums[i] + f(i+2))
+f(n-2) = max(nums[n-2], nums[n-1])
+f(n-1) = nums[n-1]
+f(n) = 0
+
+
