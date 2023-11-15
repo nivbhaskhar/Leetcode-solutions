@@ -19,3 +19,43 @@ f(n-1) = nums[n-1]
 f(n) = 0
 
 
+if you want to return the houses that were robbed
+
+keep track of houses for f(i+1), f(i+1) and update for f(i) accordingly
+
+
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return 0
+        if len(nums) == 1:
+            return nums[0]
+
+        n = len(nums)
+        prev_prev_ans = 0
+        prev_prev_ans_pos = []
+        prev_ans = nums[n-1]
+        prev_ans_pos = [n-1]
+        for i in range(n-2,-1,-1):
+            ans_pos = []
+            if prev_ans < nums[i] + prev_prev_ans:
+                ans = nums[i] + prev_prev_ans
+                ans_pos = prev_prev_ans_pos
+                ans_pos.append(i)
+            else:
+                ans = prev_ans
+                ans_pos = prev_ans_pos
+
+            
+            
+            print(nums[i:], ans, [nums[x] for x in ans_pos])
+            prev_prev_ans_pos = prev_ans_pos
+            prev_ans_pos = ans_pos
+            prev_prev_ans = prev_ans
+            prev_ans = ans
+
+        
+        return ans
+
+
+        

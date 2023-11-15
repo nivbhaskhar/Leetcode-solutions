@@ -1,0 +1,60 @@
+352. Data Stream as Disjoint Intervals
+
+Problem:
+https://leetcode.com/problems/data-stream-as-disjoint-intervals/description/
+
+
+Idea:
+
+
+3*10^4 calls -- add, get intervals
+
+10^2 calls for get intervals
+
+
+hrve {start:end}, {end:start}, a data structure storing all starts so far
+
+
+
+
+
+
+when you add a number ---  x --
+
+
+check if new number/number already in collection -- HOW ?
+
+if new number
+
+is x-1 the end of a sequence ? if yes, can add x to x-1 end
+
+
+
+if x+1 start of a sequence ? if yes, can add [x+1..] to x wherever x goes
+
+
+
+how to detect if x is new or is in collection ?
+
+ssearch for start just before x or at x...
+
+
+if start < x and start..end < x --> x not in collection
+
+if end >= x, then x in collection
+
+
+need to maintain the starts in sorted order and ability to find pred of a value efficiently, insert and remove vals efficiently and get sorted vals efficiently
+
+
+---> data structure is Balanced Binary Search Tree
+
+
+
+
+
+
+
+
+
+

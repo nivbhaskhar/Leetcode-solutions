@@ -62,6 +62,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 339 | Recursion |  Nested list weight sum | [python](339_NestedListWeightSum.py) | [explanation](339_NestedListWeightSum_wb.txt)|
 | 346 | Queue |  Moving average from data stream | [python](346_MovingAverageFromDataStream.py) | [explanation](346_MovingAverageFromDataStream_wb.txt)|
 | 351 | Backtracking |  Android unlock patterns | [python](351_AndroidUnlockPatterns.py) | [explanation](351_AndroidUnlockPatterns_wb.txt)|
+| 352 | BST, Dictionary |  Data stream as disjoint intervals | [python](352_DataStreamAsDisjointIntervals.py) | [explanation](352_DataStreamAsDisjointIntervals_wb.txt)|
 | 362 | Queue |  Design hit counter | [python](362_DesignHitCounter.py) | [explanation](362_DesignHitCounter_wb.txt)| 
 | 399 | BFS |  Evaluate division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
 | 406 | Sorting | Queue reconstruction by height | [python](406_QueueReconstructionByHeight.py) | [explanation](406_QueueReconstructionByHeight_wb.pdf) |
