@@ -1,0 +1,79 @@
+1146. Snapshot Array
+
+Problem:
+https://leetcode.com/problems/snapshot-array/description/
+
+
+Idea:
+[0, .....0] --> array
+snap_id = -1, 
+
+set
+
+arr[i] = v
+
+
+
+
+snap --> snap_id += 1, return snap_id
+
+get(i, snap_id) -- at that point in time, what val did arr[i] have ?
+
+
+
+n = 5*10^4
+
+5*10^4 calls can be made ...
+
+each time if we store entire array, that's too much memory..
+
+what changes between last snap_id ?
+
+if we set values in between
+
+
+and next snap_id ?
+
+
+
+
+each time take a snap : {snap_id: {key:value}}
+
+any time you do set, {snap:id: {key:value update}}
+
+also need a way to retrieve given an index and snap id, what's the max snap id <= queried snap id to which it belongs ?
+
+
+so each time you set an index also create index: [list of snap ids] ---> sorted
+
+and can do binary search ..
+
+
+so overall:
+
+set[i, val]:
+
+update {snap_id: {add i:val}}
+
+update i: [list of snap_ids] append snap id
+
+when you take a snap:
+increment snap_id
+create empty {snap_id: {}}
+
+
+when you call get(snap_id, i):
+
+find snap_id <= queried snap_id in i:[snap_ids] --> binary search $ O(log 5*10^4)
+return snap_id[i] 
+
+
+so O(n log n) - time complexity
+
+space complexity : i: [snap_ids], snap_id: [i:val]
+
+each set call : O(1) + O(1) --> O(num calls to set)
+each call to snap : O(1) --> O(num calls to take snapshot)
+
+
+

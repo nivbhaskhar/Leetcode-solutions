@@ -43,7 +43,7 @@ also let lsb = least set bit of start, i.e. first 1 from right
 
 if p is to the left of lsb, this means you can safely assume the block to be
 
-start with ***** instead of the 0s before the lsb
+start with ***** instead of the 0s  after the lsb
 
 i.e you can increment start to start + 2^{num_zeros) and recurse, and add block (start, 32-num_zeros)
 to cover the current start

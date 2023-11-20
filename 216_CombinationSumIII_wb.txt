@@ -1,0 +1,29 @@
+216. Combination Sum III
+
+Problem:
+https://leetcode.com/problems/combination-sum-iii/
+
+Idea:
+
+backtracking
+
+
+          V which max number we can use
+
+[9,8,7,6,5|,4,3,2,1], global ans list = list of answers, current state = [ans list building up], k = how many more numbers we should use, n = sum we want to reach
+
+
+recurse,
+
+add a valid number to current state
+
+if at end leaf node (i.e. k == 1), check if we have a valid ans to add to global ans list
+if yes, add and remove any changes you made to state
+
+
+if at non leaf node, try adding various numbers to state and recurse, after that reset state
+
+if at n<=0 at any point, return as invalid stage to be in
+
+
+
