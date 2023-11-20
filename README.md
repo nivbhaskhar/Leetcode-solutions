@@ -62,6 +62,7 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 323 | DFS/Union Find | Number of connected components in an undirected graph| [python](323_NumberOfConnectedComponentsInAnUndirectedGraph.py) | [explanation](323_NumberOfConnectedComponentsInAnUndirectedGraph_wb.txt)|
 | 339 | Recursion |  Nested list weight sum | [python](339_NestedListWeightSum.py) | [explanation](339_NestedListWeightSum_wb.txt)|
 | 346 | Queue |  Moving average from data stream | [python](346_MovingAverageFromDataStream.py) | [explanation](346_MovingAverageFromDataStream_wb.txt)|
+| 347 | Recursion, Quick select/Heap |  Top k frequent elements | [TODO](347_TopKFrequentElements.py) | [explanation](347_TopKFrequentElements_wb.txt)|
 | 351 | Backtracking |  Android unlock patterns | [python](351_AndroidUnlockPatterns.py) | [explanation](351_AndroidUnlockPatterns_wb.txt)|
 | 352 | BST, Dictionary |  Data stream as disjoint intervals | [python](352_DataStreamAsDisjointIntervals.py) | [explanation](352_DataStreamAsDisjointIntervals_wb.txt)|
 | 362 | Queue |  Design hit counter | [python](362_DesignHitCounter.py) | [explanation](362_DesignHitCounter_wb.txt)| 

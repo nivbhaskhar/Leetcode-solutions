@@ -1,0 +1,38 @@
+347. Top K Frequent Elements
+
+Problem:
+https://leetcode.com/problems/top-k-frequent-elements/description/
+
+Idea:
+
+
+nums = n , k --> k most frequent elements
+
+[1,1,2,3,4...]
+
+{1: freq_1, ..} -- get counter
+
+
+naive:
+counter -> max heap of all elements + freq --> pop k times,  
+
+O(n) + O(n) [building heap of size n] + k log n
+
+better:
+counter -> min heap of size k --> if exceed k size, push and pop
+
+
+ O(n) + [min heap of size k] --> O(n) + n log k --> n log k
+
+
+quick select type algo
+
+look at frequencies array and try to get top k by quick select : i.e. choose a random pivot and move stuff > pivot to front and rest to back and decide which array part to keep "selecting"
+
+
+
+# [freq .. | ...]
+
+# [...<i..[i]. >i...]
+
+
