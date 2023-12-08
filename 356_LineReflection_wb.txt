@@ -1,0 +1,89 @@
+356. Line Reflection
+
+Problem:
+https://leetcode.com/problems/line-reflection/description/
+
+Idea:
+
+
+
+reflection of (x,y) about x = a is (2a-x,y) 
+
+ (a-(x-a))=2a-x-------a----(x-a)----x
+
+
+
+2a-x = x'
+
+2a-x' = 2a-(2a-x) = x
+
+
+
+
+
+y: [x1,x2,...] --> is there an a so that f(x) = 2a-x takes each to itself ? 
+
+y':[x1',x2'...]
+
+
+smallest ......| .... largest
+
+only candidates are middle point/ in between middle points
+
+         x   x'
+eg: if * * | * *
+
+has to be between x and x', in fact x+x'/2 --> test if it works
+
+         x
+         |
+eg if  * * * --> has to be x
+
+
+if multiple points??
+
+ |
+233
+
+ 
+233334
+
+algo will still work
+
+
+0 n=1, middle = 1//2 = 0
+012 n=3, middle = 3//2 = 1
+01234, n=5, middle = 5//2 = 2
+
+01 n=2, middle_two = 0,1 --> n//2-1, n//2
+0123, n=4, middle_two = 12 ---> n//2-1, n//2
+012345, n=6, middle_two= 23 ---> n//2-1, n//2
+
+
+
+   
+
+apparently, for multiple points need to treat it like a single point
+
+O(n) extra space + O(1) extra space
+
+
+O(\ sum n_i log n_i) --> O(n log n) for sorting 
+
+and O(\sum n_i) --> for checking if candidate or not 
+
+O(n) for checking if unique reflector
+
+so overall O(nlog n) 
+
+
+---
+after looking at solution, 
+
+can make the candidate deterministic by mix x + max x/2 as reflector
+
+and only checking if 2a-x belongs to set.
+
+avoids the sorting altogether, so O(n) time
+
+
