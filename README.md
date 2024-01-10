@@ -130,3 +130,4 @@ Solutions with code and explanations to leetcode problems I have worked on
 |2859 | Bit Manipulation | Sum of values at indices with K set bits| [python](2859_SumOfValuesAtIndicesWithKSetBits.py) | [explanation](2859_SumOfValuesAtIndicesWithKSetBits_wb.txt)|
 |2860 | Queue, Stack, Sorting | Happy students | [python](2860_HappyStudents.py) | [explanation](2860_HappyStudents_wb.txt)|
 |2861 | Linear Programming/Binary Search | Maximum number of alloys | [python](2861_MaximumNumberOfAlloys.py) | [explanation](2861_MaximumNumberOfAlloys_wb.txt)|
+|3002 | Math, Sets | Maximum size of a set after removals | [python](3002_MaximumSizeOfSetAfterRemovals.py) | [explanation](3002_MaximumSizeOfSetAfterRemovals_wb.txt)|

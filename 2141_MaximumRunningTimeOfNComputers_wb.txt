@@ -1,0 +1,16 @@
+2141. Maximum Running Time of N Computers
+
+Problem:
+https://leetcode.com/problems/maximum-running-time-of-n-computers/description/
+
+Idea:
+
+f(list) = ans
+
+f(list) = 1 + max(f(list modified by 1 of N batteries))
+
+f(list with batteries <= 0 charge) = 0
+
+this is too inefficient
+
+

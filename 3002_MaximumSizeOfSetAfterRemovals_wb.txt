@@ -1,0 +1,65 @@
+3002. Maximum Size of a Set After Removals
+
+Problem:
+https://leetcode.com/problems/maximum-size-of-a-set-after-removals/description/
+
+Idea:
+
+
+Case by case analysis
+A   B are the 2 initial sets
+
+Case 1:
+
+Both A, B have <= n/2 unique elements
+
+|A| + |B| - |A\cap B|
+
+|A U B|
+
+Case 2:
+
+A has > n/2 unique elts
+B <= n/2 unique elts
+
+
+Keep B , but from A pick -- some n/2 unique elts
+
+
+min(n/2, |A| - |A\cap B|) + |B|
+
+
+
+
+Case 2:
+
+Both A,B have > n/2 unique elts
+
+min(n/2,|A - A\cap B|) = x + 
+min(n/2,|B - A\cap B|) = y +
+min(n/2-x, |A\cap B|) if n/2 > x     = z
+min(n/2-y, |A\cap B|-z) if n/2 > y and |A\cap B| > z
+
+
+
+need |A|, |B| , |A\cap B|
+
+
+
+-----
+
+Final solution
+
+x = min(|A|-|A\cap B|, n//2) -- add as many unique elements from A not in intersection A\cap B
+y = min(|B|-|A\cap B|, n//2) -- add as many unique elements from B not in intersection A\cap B
+
+z = elements we can add from A\cap B
+
+min(|A\cap B|, bandwidth we have left :  max(n//2-x, 0) + max(n//2-y,0))
+
+x+y+z is final answer
+
+
+
+
+
