@@ -1,0 +1,72 @@
+380. Insert Delete GetRandom O(1)
+
+Problem:
+https://leetcode.com/problems/insert-delete-getrandom-o1/description/
+
+Idea:
+
+
+values = list of values
+values_to_positions = {val : position of value in list}
+
+
+insert:
+if value is in values to positions (o(1) look up), do nothing
+otherwise append value to end of list
+also add value: position = length of value list-1 to the dictionary
+
+
+remove:
+
+if val not in values to positions, do nothing
+otherwise
+
+switch the last value in list with the value to be removed
+
+val to be removed = a in pos p
+last val = b in pos -1 (note: a could be same as b and p could be -1)
+
+....a.....b
+    p....-1
+
+
+
+switch
+
+
+.....b....b
+     p....-1
+
+
+update b: p in values to positions
+
+left with {a:p, b:p}
+
+remove b from list
+......b....*
+......p.....
+
+if b=a
+
+would look like
+.........*
+.........-1
+
+only thing left to do is to remove {a:p} from dictionary
+
+left with {b:p} if a!=b and {} if a=b
+
+
+get random
+
+pick random number from 0.... len of values-1 inclusive
+
+return values[random number]
+
+
+
+
+
+
+
+

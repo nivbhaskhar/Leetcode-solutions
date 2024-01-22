@@ -66,7 +66,8 @@ Solutions with code and explanations to leetcode problems I have worked on
 | 351 | Backtracking |  Android unlock patterns | [python](351_AndroidUnlockPatterns.py) | [explanation](351_AndroidUnlockPatterns_wb.txt)|
 | 352 | BST, Dictionary |  Data stream as disjoint intervals | [python](352_DataStreamAsDisjointIntervals.py) | [explanation](352_DataStreamAsDisjointIntervals_wb.txt)|
 | 356 | Dictionary |  Line Reflection | [python](356_LineReflection.py) | [explanation](356_LineReflection_wb.txt)|
-| 362 | Queue |  Design hit counter | [python](362_DesignHitCounter.py) | [explanation](362_DesignHitCounter_wb.txt)| 
+| 362 | Queue |  Design hit counter | [python](362_DesignHitCounter.py) | [explanation](362_DesignHitCounter_wb.txt)|
+| 380 | List, Dictionary |  Insert delete get random O(1) | [python](380_InsertDeleteGetRandomO(1).py) | [explanation](380_InsertDeleteGetRandomO(1)_wb.txt)|  
 | 399 | BFS |  Evaluate division | [python](399_EvaluateDivision.py) | [explanation](399_EvaluateDivision_wb.pdf)| 
 | 406 | Sorting | Queue reconstruction by height | [python](406_QueueReconstructionByHeight.py) | [explanation](406_QueueReconstructionByHeight_wb.pdf) |
 | 408 | String | Valid word abbreviation | [python](408_ValidWordAbbreviation.py) | [explanation](408_ValidWordAbbreviation_wb.txt) |
